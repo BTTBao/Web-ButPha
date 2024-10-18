@@ -1,0 +1,124 @@
+.sale img {
+    width: 1264px;
+    height: 61px;
+    max-width: 100%;
+    margin-left: 100px;
+}
+.header-menu {
+    border: #ffffff solid;
+    background-color: #ffffff;
+    margin: 0;
+    width: 100%;
+    height: 129px;
+}
+
+.header-menu .sale {
+    border: #D53829 solid;
+    background-color: #D53829;
+    width: 100%;
+    height: 61px;
+    margin: 0;
+    padding: 0;
+}
+.header-menu .bar
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 133px;
+    display: flex;
+}
+
+.header-menu .bar .menu
+{
+    width: 60px;
+    height: 100%;  
+    display: flex;
+    padding-left: 30px;
+}
+.header-menu .bar .menu .menuMain img
+{
+    width: 36px;
+    height: 36px;
+}
+.header-menu .bar .menu .seeMore img
+{
+    width: 16px;
+    height: 16px;
+    padding-top: 10px;
+}
+.header-menu .bar .logo img
+{
+    left:0;
+    width: 216.36px;
+    height: 36.91px;
+}
+.header-menu .bar .search
+{
+    position: relative;
+}
+.header-menu .bar .search input
+{
+    width: 480.16px;
+    height: 40px;
+    padding : 0 80px 0 24px;
+    border-radius: 10px;
+    border: 1px solid #CDCFD0;
+    color: #000000;
+}
+.header-menu .bar .search .searchArea
+{
+    position: absolute;
+    width: 72px;
+    height: 30px; 
+    border-radius: 10px;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+    top:4px;
+    right:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-menu .bar .search .searchArea img
+{
+    width: 20px;
+    height: 20px;
+}
+.header-menu .bar .select
+{
+    position: relative;
+    top: -19px;
+    margin-left: 24px;
+    width: 340px;
+    height: 72px; 
+}
+.header-menu .bar .select ul
+{
+    margin-left: -40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu .bar .select ul li img
+{
+    width: 24px;
+    height: 24px;
+}
+.header-menu .bar .select ul li
+{
+    border: 2px solid rgb(255, 255, 255);
+    border-color: #ffffff;
+    text-align: center;
+    width: auto;
+    height: 50px;
+    color: grey;
+}
+.header-menu .bar .select ul li, a
+{
+    text-decoration: none;
+}
+.header-menu .bar .select ul li, p
+{
+    margin-top: 0px;
+}
