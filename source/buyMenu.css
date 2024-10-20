@@ -1,18 +1,12 @@
-.sale img {
-    width: 1264px;
-    height: 61px;
-    max-width: 100%;
-    margin-left: 100px;
-}
-.header-menu {
+.main-menu {
+    position: absolute;
     border: #ffffff solid;
     background-color: #ffffff;
-    margin: 0;
     width: 100%;
     height: 129px;
 }
-
-.header-menu .sale {
+.main-menu .sale {
+    position: absolute;
     border: #D53829 solid;
     background-color: #D53829;
     width: 100%;
@@ -20,12 +14,41 @@
     margin: 0;
     padding: 0;
 }
+/* container//////////////////// */
+.header-menu .sale img {
+    position: absolute;
+    width: 1264px;
+    height: 61px;
+    max-width: 100%;
+}
+
+.header-menu {
+    border: #ffffff solid;
+    background-color: #ffffff;
+    margin: 0;
+    width: 1519.2px;
+    height: 129px;
+    margin: auto;
+}
+
+.header-menu .sale {
+    border: #D53829 solid;
+    background-color: #D53829;
+    width: 1519.2px;
+    height: 61px;
+    margin: 0;
+    padding: 0;
+}
+/*========================bar======*/
 .header-menu .bar
 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 133px;
+    position: relative;
+    top: 5px;
+    width: 1390px;
+    height: 65px; 
     display: flex;
+    align-items: center;
+
 }
 
 .header-menu .bar .menu
@@ -58,12 +81,16 @@
 }
 .header-menu .bar .search input
 {
-    width: 480.16px;
+    width: 585.16px;
     height: 40px;
-    padding : 0 80px 0 24px;
+    padding : 0 0 0 24px;
     border-radius: 10px;
     border: 1px solid #CDCFD0;
     color: #000000;
+}
+.header-menu .bar li a p
+{
+    font-size: 12px;
 }
 .header-menu .bar .search .searchArea
 {
@@ -84,41 +111,235 @@
     width: 20px;
     height: 20px;
 }
-.header-menu .bar .select
-{
-    position: relative;
-    top: -19px;
-    margin-left: 24px;
-    width: 340px;
-    height: 72px; 
-}
-.header-menu .bar .select ul
+.header-menu .bar ul
 {
     margin-left: -40px;
     list-style: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
-.header-menu .bar .select ul li img
-{
+.header-menu .bar ul li img
+{ 
     width: 24px;
     height: 24px;
 }
-.header-menu .bar .select ul li
+.header-menu .bar  ul li
 {
-    border: 2px solid rgb(255, 255, 255);
-    border-color: #ffffff;
     text-align: center;
     width: auto;
     height: 50px;
     color: grey;
+    padding-right: 15px;
 }
-.header-menu .bar .select ul li, a
+.header-menu .bar  ul li .flag
 {
+    border: 2px solid grey; 
+    width: 74.6px; 
+    height: 40px; 
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+.header-menu .bar  ul li .flag .flagItem img
+{
+    position: absolute;
+    align-items: center;
+    left:10px;
+    top:7px;
+    width: 37px; 
+    height: 24px;
+}
+.header-menu .bar  ul li .flag .seeMore img
+{
+    position: absolute;
+    width: 16px; 
+    height: 16px; 
+    right: 8px;
+    top:12px
+}
+.header-menu .bar ul li, a
+{
+    color: grey;
     text-decoration: none;
 }
-.header-menu .bar .select ul li, p
+.header-menu .bar ul li, p
 {
     margin-top: 0px;
+}
+/* ===========menu================= */
+.header-menu>.bar>ul>li 
+{
+    position: relative;
+}
+.header-menu .bar .submenu-main .menuTotal {
+    background-color: #FFFFFF;
+    width: 1230px;
+    height: 555.56px;
+    position: absolute;
+    display: none;
+    left: -230px;
+    top: 100%;
+    z-index: 1000;
+}
+.header-menu .bar .submenu-main .menuTotal .sub-menu {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-color: #ffffff;
+    display: block;
+    text-align: left;
+    top :10px;
+    left: 40px;
+    padding-left: 5px;
+    z-index: 1000;
+}
+
+.header-menu .bar .menuNoti
+{
+    position: absolute;
+    width: 264px;
+    height: 340px;
+    right: 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: none;
+}
+.submit-login
+{
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    background-color: #C92127;
+    border: none;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.submit-register
+{
+    position: absolute;
+    font-weight: bold;
+    color: #C92127;
+    font-size: 15px;
+    background-color: #ffffff;
+    border: #C92127 solid 2px;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 10px; 
+}
+.header-menu .bar .menuLogin
+{
+    position: absolute;
+    width: 264px;
+    height: 100px;
+    right: 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: none;  
+}
+.header-menu .bar ul li:nth-child(2):hover .submenu-main .menuTotal {
+    display: block;
+}
+
+.header-menu .bar ul li:nth-child(4):hover .menuNoti {
+    display: block;
+}
+.header-menu .bar ul li:nth-child(6):hover .menuLogin {
+    display: block;
+}
+.header-menu .bar .submenu-main .menuTotal .sub-menu>li 
+{
+    width: 280px;
+    height: 52px;
+    left: 0px;
+    font-size: 1.23em;
+    font-weight: bold;
+    color: #000000;
+    padding: 0px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-title 
+    {
+        position: absolute;
+        display: none;
+        font-size: 21px;
+        text-align: left;
+        width: 400px;
+        left : 400px;
+        top : 0px;
+    }
+    .header-menu .bar .submenu-main
+    {
+        position: relative;
+    }
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-content-four {
+        position:absolute;
+        display: none;
+        top: -17px;
+        left: 320px;
+        width: 910px;
+        padding-left: 10px;
+        padding-top: 65px;
+        height: 495px;
+        z-index: 1000;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-content-three {
+        position:absolute;
+        display: none;
+        top: -17px;
+        left: 320px;
+        width: 910px;
+        padding-left: 10px;
+        padding-top: 65px;
+        height: 495px;
+        z-index: 1000;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-content-four>ul,
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-content-three>ul {
+        display: contents;
+    }
+
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-content-four>ul>ul,
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-content-three>ul>ul
+    {
+        align-items:start;
+        display: flex;
+        flex-direction: column; /* Sắp xếp các mục theo cột */
+        justify-content: flex-start;
+        gap: 0px;
+    }
+
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-content-four ul li,
+    .header-menu .bar .submenu-main .menuTotal .sub-menu li .submenu-content-three ul li {
+        left:0px;
+        font-size: 13px;
+        height: 25px;
+        font-weight: normal;
+        color: #000000;
+        cursor: pointer;
+    }
+    .header-menu > .bar > ul > li > .submenu-main > .menuTotal > .sub-menu > li.active .submenu-title,
+    .header-menu > .bar > ul > li > .submenu-main > .menuTotal > .sub-menu > li.active .submenu-content-four,
+    .header-menu > .bar > ul > li > .submenu-main > .menuTotal > .sub-menu > li.active .submenu-content-three
+    {
+        display: grid; /* Hoặc display: block; nếu bạn muốn */
+    }
+/* Kiểu cho mục đầu tiên khi có lớp active */
+.header-menu > .bar >ul > li > .submenu-main > .menuTotal > .sub-menu > li.active {
+    border-radius: 10px;
+    background-color: #F2F4F5;
+}
+
+.header-menu .bar .submenu-main .menuTotal .jamp {
+    width: 320px;
+    height: 100%;
+    border-right: 2px solid #CDCFD0;
 }

@@ -4,72 +4,620 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/buyMenu.css">
+    <link rel="stylesheet" href="buyMenu.css">
     <style>
         body {
-            background-color: #F0F0F0;
+            font-family: nunito-sans, sans-serif, Helvetica, Arial;
+            color: #333333;
+            font-size: 13px;
+            font-weight: 400;
             margin: 0;
             padding: 0;
+            background-color: #F0F0F0; /* Màu nền cho toàn bộ trang */
+        }
+        .container {
+            max-width: 1200px; /* Chiều rộng tối đa */
+            margin: auto; /* Căn giữa */
+            padding: 0; /* Padding trong container */
+        }
+        .main-content {
+            padding: 20px; /* Khoảng cách giữa các nội dung */
+            /* Bạn có thể thêm các thuộc tính khác ở đây */
         }
     </style>
 </head>
 
 <body>
-    <div class="header-menu">
-        <div class="sale">
-            <a href=""><img src="image/sale.webp" alt=""> </a>
-        </div>
-        <div class="bar">
-            <div class="logo">
-                <img src="image/fahasa-logo.webp" alt=""> 
+    <div class="main-menu"><div class="sale"></div></div>
+
+    <div class="container">
+
+        <div class="header-menu">
+            <div class="sale">
+                <a href=""><img src="image/sale.webp" alt=""> </a>
             </div>
-            <a href="">
-                <div class="menu">
-                    <div class="menuMain">
-                        <img src="image/ico_menu.png" alt="">
-                    </div>
-                    <div class="seeMore">
-                        <img src="image/icon_seemore_gray.png" alt="">
-                    </div>
-                </div>
-            </a>
-            <div class="search">
-                <input type="text" placeholder="Bản chất của người - Han Kang giải Nobel 2024">
-                <a href=""> 
-                    <div class="searchArea">
-                        <img src="image/ico_search_white.png" alt="">
-                    </div>
-                </a>
-            </div>
-            <div class="select">
+            <div class="bar">
                 <ul>
-                    <a href="">
                     <li>
-                        <img src="image/noti_icon.png" alt="">
-                        <p>Thông báo</p>
+                        <a href="">
+                            <div class="logo">
+                                <img src="image/fahasa-logo.webp" alt=""> 
+                            </div>
+                        </a>
                     </li>
-                    </a>
-                    <a href="">
-                        <li>
+                    <li>
+                        <a href="">
+                            <div class="menu">
+                                <div class="menuMain">
+                                    <img src="image/ico_menu.png" alt="">
+                                </div>
+                                <div class="seeMore">
+                                    <img src="image/icon_seemore_gray.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="submenu-main">
+                            <div class="menuTotal">
+                                <ul class="sub-menu">
+                                    <div style="font-weight: bold;font-size: 1.7em;color: #7A7E7F; text-align: left;padding: 0 12px;margin-bottom: 16px;" class="">Danh mục sản phẩm</div>
+                                    <li>Sách Trong Nước
+                                        <div class="submenu-title">Sách Trong Nước </div>
+                                        <div class="submenu-content-four">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">VĂN HỌC</a></li>
+                                                    <li><a href="">Tiểu Thuyết</a></li>
+                                                    <li><a href="">Truyện Ngắn - Tản Văn</a></li>
+                                                    <li><a href="">Light Novel</a></li>
+                                                    <li><a href="">Ngôn Tình</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">SÁCH THIẾU NHI</a></li>
+                                                    <li><a href="">Manga - Comic</a></li>
+                                                    <li><a href="">Kiến Thức Bách Khoa</a></li>
+                                                    <li><a href="">Sách Tranh Kỹ Năng Sống</a></li>
+                                                    <li><a href="">Vừa Học - Vừa Chơi</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">SÁCH MỚI</a></li>
+                                                    <li><a href="">MANGA MỚI ♥</a></li>
+                                                    <li><a href="">LIGHT NOVEL MỚI ♥</a></li>
+                                                    <li><a href="">ĐAM MỸ MỚI ♥</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">KINH TẾ</a></li>
+                                                    <li><a href="">Nhân Vật - Bài Học Kinh Doanh</a></li>
+                                                    <li><a href="">Quản Trị - Lãnh Đạo</a></li>
+                                                    <li><a href="">Marketing - Bán Hàng</a></li>
+                                                    <li><a href="">Phân Tích Kinh Tế</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">TIỂU SỬ - HỒI KÝ</a></li>
+                                                    <li><a href="">Câu Chuyện Cuộc Đời</a></li>
+                                                    <li><a href="">Chính Trị</a></li>
+                                                    <li><a href="">Kinh Tế</a></li>
+                                                    <li><a href="">Nghệ Thuật - Giải Trí</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">SÁCH BÁN CHẠY ♥</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">TÂM LÝ - KĨ NĂNG SỐNG</a></li>
+                                                    <li><a href="">Kỹ Năng Sống</a></li>
+                                                    <li><a href="">Rèn Luyện Nhân Cách</a></li>
+                                                    <li><a href="">Tâm Lý</a></li>
+                                                    <li><a href="">Sách Cho Tuổi Mới Lớn</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">NUÔI DẠY CON</a></li>
+                                                    <li><a href="">Cẩm Nang Làm Cha Mẹ</a></li>
+                                                    <li><a href="">Phương Pháp Giáo Dục Trẻ</a></li>
+                                                    <li><a href="">Phát Triển Trí Tuệ Cho Trẻ</a></li>
+                                                    <li><a href="">Phát Triển Kỹ Năng Cho Trẻ</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">GIÁO KHOA - THAM KHẢO</a></li>
+                                                    <li><a href="">Sách Giáo Khoa</a></li>
+                                                    <li><a href="">Sách Tham Khảo</a></li>
+                                                    <li><a href="">Luyện Thi THPT Quốc Gia</a></li>
+                                                    <li><a href="">Mẫu Giáo</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">SÁCH HỌC NGOẠI NGỮ</a></li>
+                                                    <li><a href="">Tiếng Anh</a></li>
+                                                    <li><a href="">Tiếng Nhật</a></li>
+                                                    <li><a href="">Tiếng Hoa</a></li>
+                                                    <li><a href="">Tiếng Hàn</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>FOREIGN BOOKS
+                                        <div class="submenu-title">FOREIGN BOOKS</div>
+                                        <div class="submenu-content-four">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">FICTION</a></li>
+                                                    <li><a href="">Contemporary Fiction</a></li>
+                                                    <li><a href="">Romance</a></li>
+                                                    <li><a href="">Fantasy</a></li>
+                                                    <li><a href="">Classics</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">BUSINESS & MANAGEMENT</a></li>
+                                                    <li><a href="">Business & Management</a></li>
+                                                    <li><a href="">Economics</a></li>
+                                                    <li><a href="">Finance & Accounting</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">NEW ARRIVALS ♥</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">PERSONAL DEVELOPMENT</a></li>
+                                                    <li><a href="">Popular Psychology</a></li>
+                                                    <li><a href="">Advice On Careers & Achievements</a></li>
+                                                    <li><a href="">Personal Finance</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">CHILDREN'S BOOKS</a></li>
+                                                    <li><a href="">Picture & Activity Books</a></li>
+                                                    <li><a href="">Fiction (For Kids & Teen)</a></li>
+                                                    <li><a href="">Education</a></li>
+                                                    <li><a href="">Non-Fiction</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">COMING SOON ♥</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">DICTIONARIES & LANGUAGES</a></li>
+                                                    <li><a href="">ELT: Learning Material & Course</a></li>
+                                                    <li><a href="">ELT: English For Specific Purposes</a></li>
+                                                    <li><a href="">Dictionaries</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">OTHER LANGUAGES</a></li>
+                                                    <li><a href="">Japanese Books</a></li>
+                                                    <li><a href="">German Books</a></li>
+                                                    <li><a href="">French Books</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li><a href="">BEST SELLERS ♥</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">OTHER CATEGORIES</a></li>
+                                                    <li><a href="">Biography</a></li>
+                                                    <li><a href="">Society & Social Sciences</a></li>
+                                                    <li><a href="">Science & Geography</a></li>
+                                                    <li><a href="">Food & Drink</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li><a href="">NYT BESTSELLERS ♥</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        VPP - Dụng Cụ Học Sinh
+                                        <div class="submenu-title">Dụng Cụ Học Sinh</div>
+                                        <div class="submenu-content-four">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">BÚT - VIẾT</a></li>
+                                                    <li><a href="">Bút Bi - Ruột Bút Bi</a></li>
+                                                    <li><a href="">Bút Gel - Bút Nước</a></li>
+                                                    <li><a href="">Bút Mực - Bút Máy</a></li>
+                                                    <li><a href="">Bút Dạ Quang</a></li>
+                                                    <li><a href="">Bút Chì - Ruột Bút Chì</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">DỤNG CỤ HỌC SINH</a></li>
+                                                    <li><a href="">Gôm - Tẩy</a></li>
+                                                    <li><a href="">Gọt Bút Chì</a></li>
+                                                    <li><a href="">Thước</a></li>
+                                                    <li><a href="">Bóp Viết - Hộp Bút</a></li>
+                                                    <li><a href="">Bộ Dụng Cụ Học Tập</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                                
+                                                <ul>
+                                                    <li><a href="">DỤNG CỤ VĂN PHÒNG</a></li>
+                                                    <li><a href="">Bìa - File Hồ Sơ</a></li>
+                                                    <li><a href="">Kẹp Giấy - Kẹp Bướm</a></li>
+                                                    <li><a href="">Đồ Bấm Kim - Kim Bấm - Gỡ Ghim</a></li>
+                                                    <li><a href="">Bút - Bảng Tên</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">DỤNG CỤ VẼ</a></li>
+                                                    <li><a href="">Bút Vẽ</a></li>
+                                                    <li><a href="">Màu Vẽ</a></li>
+                                                    <li><a href="">Khay - Cọ Vẽ</a></li>
+                                                    <li><a href="">Tập Vẽ - Giấy Vẽ</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                                
+                                                <ul>
+                                                    <li><a href="">SẢN PHẨM VỀ GIẤY</a></li>
+                                                    <li><a href="">Tập - Vở</a></li>
+                                                    <li><a href="">Sổ Tay Các Loại</a></li>
+                                                    <li><a href="">Giấy Photo</a></li>
+                                                    <li><a href="">Giấy Note</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">SẢN PHẨM KHÁC</a></li>
+                                                    <li><a href="">Dao Rọc Giấy - Lưỡi Dao Rọc Giấy</a></li>
+                                                    <li><a href="">Băng Keo - Cắt Băng Keo</a></li>
+                                                    <li><a href="">Bút Xóa Nước - Xóa Kéo</a></li>
+                                                    <li><a href="">Hồ Dán</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                                
+                                                <ul>
+                                                    <li><a href="">SẢN PHẨM ĐIỆN TỬ</a></li>
+                                                    <li><a href="">Máy Tính Điện Tử</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li><a href="">SẢN PHẨM MỚI</a></li>
+                                                    <li><a href="">SẢN PHẨM BÁN CHẠY</a></li>
+                                                </ul>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Đồ Chơi
+                                        <div class="submenu-title">ĐỒ CHƠI</div>
+                                        <div class="submenu-content-three">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">ĐỒ CHƠI NỔI BẬT</a></li>
+                                                    <li><a href="">Xếp hình - Lắp Ghép</a></li>
+                                                    <li><a href="">Đồ Chơi Giáo Dục</a></li>
+                                                    <li><a href="">Đồ Chơi Điều Khiển</a></li>
+                                                    <li><a href="">Board Game</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li><a href="">ĐỒ CHƠI THEO PHIM</a></li>
+                                                    <li><a href="">My Little Pony</a></li>
+                                                    <li><a href="">Paw Patrol</a></li>
+                                                    <li><a href="">Super Wings</a></li>
+                                                    <li><a href="">Chiến Thần Vô Cực - NADO</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">PHƯƠNG TIỆN CÁC LOẠI</a></li>
+                                                    <li><a href="">Ô Tô</a></li>
+                                                    <li><a href="">Máy Bay</a></li>
+                                                    <li><a href="">Tàu Hoả</a></li>
+                                                    <li><a href="">Tàu Thuỷ</a></li>
+                                                    <li><a href="">Phương Tiện Khác</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">ĐỒ CHƠI KHÁC</a></li>
+                                                    <li><a href="">Bột Nặn - Cát Nặn</a></li>
+                                                    <li><a href="">Búp Bê</a></li>
+                                                    <li><a href="">Thú Bông</a></li>
+                                                    <li><a href="">Hướng Nghiệp Nhập Vai</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>                                                                                              
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">MÔ HÌNH CÁC LOẠI</a></li>
+                                                    <li><a href="">Mô Hình Giấy</a></li>
+                                                    <li><a href="">Mô Hình Gỗ</a></li>
+                                                    <li><a href="">Mô Hình Nhân Vật</a></li>
+                                                    <li><a href="">Mô Hình Động Vật</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">SẢN PHẨM MỚI</a></li>
+                                                    <li><a href="">SẢN PHẨM BÁN CHẠY</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Làm Đẹp - Sức Khoẻ
+                                        <div class="submenu-title">Làm Đẹp - Sức Khoẻ</div>
+                                        <div class="submenu-content-three">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">Làm Đẹp - Sức Khỏe</a></li>
+                                                    <li><a href="">Khẩu Trang Các Loại</a></li>
+                                                    <li><a href="">Nước Rửa Tay - Xà Phòng</a></li>
+                                                    <li><a href="">Băng Keo Cá Nhân</a></li>
+                                                    <li><a href="">Khăn Giấy - Giấy Ướt</a></li>
+                                                    <li><a href="">Chăm Sóc Cá Nhân Khác</a></li>
+                                                    <li><a href="">Sản Phẩm Làm Đẹp</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Hành Trang Đến Trường
+                                        <div class="submenu-title">Hành Trang Đến Trường</div>
+                                        <div class="submenu-content-four">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">SÁCH GIÁO KHOA</a></li>
+                                                    <li><a href="">Lớp 1</a></li>
+                                                    <li><a href="">Lớp 2</a></li>
+                                                    <li><a href="">Lớp 3</a></li>
+                                                    <li><a href="">Lớp 4</a></li>
+                                                    <li><a href="">Lớp 5</a></li>
+                                                    <li><a href="">Lớp 6</a></li>
+                                                    <li><a href="">Lớp 7</a></li>
+                                                    <li><a href="">Lớp 8</a></li>
+                                                    <li><a href="">Lớp 9</a></li>
+                                                    <li><a href="">Lớp 10</a></li>
+                                                    <li><a href="">Lớp 11</a></li>
+                                                    <li><a href="">Lớp 12</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">SÁCH THAM KHẢO</a></li>
+                                                    <li><a href="">Mẫu Giáo</a></li>
+                                                    <li><a href="">Lớp 1</a></li>
+                                                    <li><a href="">Lớp 2</a></li>
+                                                    <li><a href="">Lớp 3</a></li>
+                                                    <li><a href="">Lớp 4</a></li>
+                                                    <li><a href="">Lớp 5</a></li>
+                                                    <li><a href="">Lớp 6</a></li>
+                                                    <li><a href="">Lớp 7</a></li>
+                                                    <li><a href="">Lớp 8</a></li>
+                                                    <li><a href="">Lớp 9</a></li>
+                                                    <li><a href="">Lớp 10</a></li>
+                                                    <li><a href="">Lớp 11</a></li>
+                                                    <li><a href="">Lớp 12</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                                
+                                                <ul>
+                                                    <li><a href="">LUYỆN THI THPTQG - LỚP 12</a></li>
+                                                    <li><a href="">Luyện Thi Môn Toán</a></li>
+                                                    <li><a href="">Luyện Thi Môn Ngữ Văn</a></li>
+                                                    <li><a href="">Luyện Thi Môn Tiếng Anh</a></li>
+                                                    <li><a href="">Luyện Thi Môn Vật Lý</a></li>
+                                                    <li><a href="">Luyện Thi Môn Hóa Học</a></li>
+                                                    <li><a href="">Luyện Thi Môn Sinh Học</a></li>
+                                                    <li><a href="">Luyện Thi Môn Địa Lý</a></li>
+                                                    <li><a href="">Luyện Thi Môn Lịch Sử</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">ĐỒ NGHỀ ĐẾN TRƯỜNG</a></li>
+                                                    <li><a href="">Cặp, Ba Lô</a></li>
+                                                    <li><a href="">Máy Tính</a></li>
+                                                    <li><a href="">Bút Các Loại</a></li>
+                                                    <li><a href="">Bóp Viết - Hộp Bút</a></li>
+                                                    <li><a href="">Tập Vở</a></li>
+                                                    <li><a href="">Bao Tập - Bao Sách</a></li>
+                                                    <li><a href="">Mực</a></li>
+                                                    <li><a href="">Gôm - Tẩy</a></li>
+                                                    <li><a href="">Gọt Bút Chì</a></li>
+                                                    <li><a href="">Compa</a></li>
+                                                    <li><a href="">Bảng Viết - Bông Lau Bảng</a></li>
+                                                    <li><a href="">Phấn - Hộp Đựng Phấn</a></li>
+                                                    <li><a href="">Xem tất cả</a></li>
+                                                </ul>                                                 
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        VPP-DCHS Theo Thương Hiệu
+                                        <div class="submenu-title">VPP-DCHS Theo Thương Hiệu</div>
+                                        <div class="submenu-content-three">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">VPP - Dụng Cụ Học Sinh</a></li>
+                                                    <li><a href="">Thiên Long</a></li>
+                                                    <li><a href="">Thương Hiệu Hàn Quốc - Morning Glory</a></li>
+                                                    <li><a href="">Thương Hiệu Hàn Quốc - Kyobo</a></li>
+                                                    <li><a href="">Thương Hiệu Nhật - Kinokuniya</a></li>
+                                                    <li><a href="">Thương Hiệu Nhật - Artline</a></li>
+                                                    <li><a href="">Thương Hiệu Nhật - Marvy</a></li>
+                                                    <li><a href="">Thương Hiệu Tây Ban Nha - Milan</a></li>
+                                                    <li><a href="">Thương Hiệu Tây Ban Nha - Apli</a></li>
+                                                    <li><a href="">Thương Hiệu Anh Quốc - Helix</a></li>
+                                                    <li><a href="">Thương Hiệu Đức - Faber-Castell</a></li>
+                                                    <li><a href="">Thương Hiệu Đức - Stabilo</a></li>
+                                                    <li><a href="">Thương Hiệu Pháp - Maped</a></li>
+                                                    <li><a href="">Thương Hiệu Indonesia - Bantex</a></li>
+                                                    <li><a href="#">Xem tất cả</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Đồ Chơi Theo Thương Hiệu
+                                        <div class="submenu-title">Đồ Chơi Theo Thương Hiệu</div>
+                                        <div class="submenu-content-three">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">Lego</a></li>
+                                                    <li><a href="">tiNiToy</a></li>
+                                                    <li><a href="">Lắp Ráp DUKA</a></li>
+                                                    <li><a href="">Lắp Ráp Sluban</a></li>
+                                                    <li><a href="">Lắp Ráp LaQ</a></li>
+                                                    <li><a href="">Mô Hình Gỗ DIY - Robotime</a></li>
+                                                    <li><a href="">Đồ Chơi VNCare</a></li>
+                                                    <li><a href="">Hot Wheels</a></li>
+                                                    <li><a href="">Play-Doh</a></li>
+                                                    <li><a href="">Barbie</a></li>
+                                                    <li><a href="#">Xem tất cả</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        Bách Hoá Online - Lưu Niệm
+                                        <div class="submenu-title">Bách Hoá Online - Lưu Niệm</div>
+                                        <div class="submenu-content-three">
+                                            <ul>
+                                                <ul>
+                                                    <li><a href="">ĐỒ DÙNG CÁ NHÂN</a></li>
+                                                    <li><a href="">Túi - Ví Thời Trang</a></li>
+                                                    <li><a href="">Đồng Hồ</a></li>
+                                                    <li><a href="">Phụ Kiện Du Lịch</a></li>
+                                                    <li><a href="">Phụ Kiện Tóc</a></li>
+                                                    <li><a href="#">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li><a href="">ĐỒ ĐIỆN GIA DỤNG</a></li>
+                                                    <li><a href="">Đèn Bàn</a></li>
+                                                    <li><a href="">Đèn Ngủ</a></li>
+                                                    <li><a href="">Đèn Pin</a></li>
+                                                    <li><a href="">Pin & Dụng Cụ Sạc Pin</a></li>
+                                                    <li><a href="#">Xem tất cả</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">LƯU NIỆM</a></li>
+                                                    <li><a href="">Móc Khóa</a></li>
+                                                    <li><a href="">Gương - Lược</a></li>
+                                                    <li><a href="">Khung Hình</a></li>
+                                                    <li><a href="">Tượng</a></li>
+                                                    <li><a href="">Quà Tặng Trang Trí Khác</a></li>
+                                                    <li><a href="#">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li><a href="">SẢN PHẨM KHÁC</a></li>
+                                                    <li><a href="">Thực Phẩm</a></li>
+                                                    <li><a href="">Thiết Bị Số - Phụ Kiện Số</a></li>
+                                                    <li><a href="">Quạt Các Loại</a></li>
+                                                    <li><a href="#">Xem tất cả</a></li>
+                                                </ul>
+                                                <ul>
+                                                    <li><a href="">NHÀ CỬA - ĐỜI SỐNG</a></li>
+                                                    <li><a href="">Ly, Cốc, Bình Nước</a></li>
+                                                    <li><a href="">Hộp Đựng Đồ Cá Nhân</a></li>
+                                                    <li><a href="">Trang Trí Nhà Cửa</a></li>
+                                                    <li><a href="">Sửa Chữa Nhà Cửa</a></li>
+                                                    <li><a href="#">Xem tất cả</a></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li><a href="">SẢN PHẨM MỚI ♥</a></li>
+                                                    <li><a href="">SẢN PHẨM BÁN CHẠY ♥</a></li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </li>                                                                       
+                                </ul>
+                                <div class="jamp"></div>
+                            </div>
+                        </div>       
+                    </li>
+                    <li>
+                        <div class="search">
+                            <input type="text" placeholder="Bản chất của người - Han Kang giải Nobel 2024">
+                            <a href="">
+                                <div class="searchArea">
+                                    <img src="image/ico_search_white.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="image/noti_icon.png" alt="">
+                            <p>Thông báo</p>
+                        </a>
+                        <div class="menuNoti">
+                            <img src="image/ico_noti_black.svg" alt="" style="position:absolute;left: 0; margin:20px">
+                            <span style="position:absolute; color: black; font-weight: bolder; left:50px; top : 23px; font-size:17px;">Thông báo</span>
+                            <img src="image/ico_login.svg" alt="" style="width: 1000px; height: 90px;position: absolute; left:-365px; top: 90px;">
+                            <span style="font-size: 16px;width: 180px;position: absolute; top:200px; left:45px">Vui lòng đăng nhập để xem thông báo</span>
+                            <input type="submit" value="Đăng Nhập" class="submit-login" style="bottom: 50px; left: 33px; ">
+                            <input type="submit" value="Đăng Ký" class="submit-register" style="bottom: 10px; left: 33px; ">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
                             <img src="image/cart_icon.png" alt="">
                             <p>Giỏ hàng</p>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
                             <img src="image/account_icon.png" alt="">
                             <p>Tài khoản</p>
-                        </li>
-                    </a>
-                    <a href="">
-                        <li style="border: 2px solid grey; width: 60px; height: 40px; border-radius: 10px; margin-top: -10px;">
-                            <img src="image/vietnam.svg" alt="">
-                            <img src="image/icon_seemore_gray.png" alt="">
-                        </li>
-                    </a>
+                        </a>
+                        <div class="menuLogin">
+                            <input type="submit" value="Đăng Nhập" class="submit-login" style="bottom: 50px; left: 33px; ">
+                            <input type="submit" value="Đăng Ký" class="submit-register" style="bottom: 10px; left: 33px; ">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="flag">
+                                <div class="flagItem"><img src="image/vietnam.svg" alt=""></div>
+                                <div class="seeMore">
+                                    <img src="image/icon_seemore_gray.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </div>  
+
+        <div class="main-content">
+            <!-- Nội dung chính của trang ở đây -->
+        </div>
+
+        <script>
+            // Lấy tất cả các mục li trong sub-menu
+            const subMenuItems = document.querySelectorAll('.header-menu > .bar >ul > li > .submenu-main > .menuTotal > .sub-menu > li');
+            const menuItem = document.querySelector('.header-menu .bar li:nth-child(2)'); // Nút mở menu
+
+            // Hàm tự động chọn và thêm lớp active cho mục đầu tiên
+            function activateFirstItem() {
+                const isAnyActive = Array.from(subMenuItems).some(item => item.classList.contains('active'));
+
+                if (!isAnyActive && subMenuItems.length > 0) {
+                    subMenuItems[0].classList.add('active'); // Thêm lớp active cho mục đầu tiên
+                }
+            }
+
+            // Thêm sự kiện khi menu được hiển thị
+            menuItem.addEventListener('mouseenter', () => {
+                activateFirstItem(); // Kích hoạt mục đầu tiên khi hover vào menu
+            });
+
+            // Khi di chuột qua các mục trong sub-menu
+            subMenuItems.forEach(item => {
+                item.addEventListener('mouseenter', () => {
+                    // Nếu mục đang hover không có lớp active, xóa lớp active khỏi tất cả
+                    if (!item.classList.contains('active')) {
+                        subMenuItems.forEach(subItem => subItem.classList.remove('active')); // Xóa active từ tất cả
+                        item.classList.add('active'); // Thêm active cho mục đang hover
+                    }
+                });
+
+                item.addEventListener('mouseleave', () => {
+                    // Không làm gì ở đây
+                    // Giữ lớp active cho mục đang hover
+                });
+            });
+
+            // Khi chuột rời khỏi vùng chứa của menu
+            menuItem.addEventListener('mouseleave', () => {
+                // Không làm gì, giữ lớp active cho mục hiện tại
+            });
+
+
+
+        </script>
+    </div>
 </body>
 </html>
