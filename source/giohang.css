@@ -1,0 +1,506 @@
+
+.sale img {
+    width: 1264px;
+    height: 61px;
+    max-width: 100%;
+    margin-left: 100px;
+}
+.header-menu {
+    border: #ffffff solid;
+    background-color: #ffffff;
+    margin: 0;
+    width: 100%;
+    height: 129px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header-menu .sale {
+    border: #D53829 solid;
+    background-color: #D53829;
+    width: 100%;
+    height: 61px;
+    margin: 0;
+    padding: 0;
+}
+.header-menu .bar
+{   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Đảm bảo khoảng cách đều giữa các thành phần */
+    width: 100%;
+    max-width: 1264px; 
+    margin: 0 auto; 
+}
+
+.header-menu .bar .menu
+{
+    width: 60px;
+    height: 100%;  
+    display: flex;
+    padding-left: 30px;
+}
+.header-menu .bar .menu .menuMain img
+{
+    width: 36px;
+    height: 36px;
+}
+.header-menu .bar .menu .seeMore img
+{
+    width: 16px;
+    height: 16px;
+    padding-top: 10px;
+}
+.header-menu .bar .logo img
+{
+    left:0;
+    width: 216.36px;
+    height: 36.91px;
+}
+.header-menu .bar .search
+{
+    position: relative;
+}
+.header-menu .bar .search input
+{
+    width: 480.16px;
+    height: 40px;
+    padding : 0 80px 0 24px;
+    border-radius: 10px;
+    border: 1px solid #CDCFD0;
+    color: #000000;
+}
+.header-menu .bar .search .searchArea
+{
+    position: absolute;
+    width: 72px;
+    height: 30px; 
+    border-radius: 10px;
+    background-color: #C92127;
+    border: 2px solid #C92127;
+    top:4px;
+    right:4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-menu .bar .search .searchArea img
+{
+    width: 20px;
+    height: 20px;
+}
+.header-menu .bar .select
+{
+    position: relative;
+    top: -19px;
+    margin-left: 24px;
+    width: 340px;
+    height: 72px; 
+}
+.header-menu .bar .select ul
+{
+    margin-left: -40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-menu .bar .select ul li img
+{
+    width: 24px;
+    height: 24px;
+}
+.header-menu .bar .select ul li
+{
+    border: 2px solid rgb(255, 255, 255);
+    border-color: #ffffff;
+    text-align: center;
+    width: auto;
+    height: 50px;
+    color: grey;
+}
+.header-menu .bar .select ul li, a
+{
+    text-decoration: none;
+}
+.header-menu .bar .select ul li, p
+{
+    margin-top: 0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+.cart-header {
+    max-width: 1280px;
+    margin: 20px auto 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #333;
+    font-weight: 200;
+}
+
+.cart-header span {
+    font-size: 16px;
+    color: #000000;
+    
+}
+
+.cart-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+}
+
+.empty-cart {
+    margin-top: 30px;
+}
+
+.empty-cart img {
+    width: 200px;
+    margin-top: -20px;
+}
+
+.empty-cart p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #090909;
+}
+
+.shop-now-btn {
+    margin-top: 20px;
+    background-color: #D32F2F;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.shop-now-btn:hover {
+    background-color: #C12727;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+}
+.footer-left {
+    flex: 1;
+    max-width: 500px;
+
+}
+.footer-left img.footer-logo {
+    width: 300px;
+}
+.footer-left p {
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #333;
+    font-size: 13px;
+}
+.bo-cong-thuong img {
+    width: 100px;
+    margin-top: px;
+}
+.app-download a img {
+    margin-top: 20px;
+    width: 120px;
+}
+.divider {
+    width: 1px;
+    background-color: #ccc;
+    position:left;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    margin: 0 20px;
+}
+.footer-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-columns .column {
+    margin-right: 20px;
+}
+
+.footer-columns .column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.footer-columns .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-columns .column ul li {
+    margin-bottom: 8px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+.contact div {
+    flex: 1;
+}
+.container-contact {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 5px;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item .icon {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 13px;
+    color: #333;
+}
+.container3 {
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 1264px; 
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Đẩy box1 về bên trái */
+}
+.container3 .multibox4 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction:row;
+    justify-content: flex-start; /* Đẩy box1 về bên trái */
+}
+
+.container3 .box1 {
+    width: 390px; /* Đặt chiều rộng cho box1 */
+    height: 355.44px; /* Đặt chiều cao cố định */
+    border-right: 0.2px solid #000000; /* Thêm border nếu cần */
+    display: flex;
+    flex-direction: column; /* Sắp xếp logo và văn bản theo chiều dọc */
+   
+    justify-content: flex-start; /* Văn bản nằm dưới logo */
+    padding: 10px;
+}
+
+.container3 .box1 img {
+    width: 300px;
+    height: auto; /* Đảm bảo ảnh giữ nguyên tỉ lệ */
+    margin-bottom: 10px; /* Thêm khoảng cách dưới logo */
+}
+
+.container3 .box1 .text-content {
+    text-align: left; /* Căn giữa văn bản */
+    font-size: 13px;
+    color: #333;
+}
+.container3 .box1 .img1 img{
+    width: 100px;
+}
+.container3 .box1 .boximg1{
+    margin-top: 5px; /* Khoảng cách trên so với logo công thương */
+    display: flex;
+    justify-content: space-between; /* Phân phối đều các biểu tượng */
+    text-align: center;
+    gap: 5px; /* Thêm khoảng cách giữa các biểu tượng */
+    flex-wrap: nowrap;
+}
+.container3 .box1 .boximg1 img {
+    width: 40px; /* Đặt kích thước nhỏ hơn cho các biểu tượng mạng xã hội */
+    height: auto;
+} 
+.container3 .box1 .boximg2{
+    margin-top: 5px; /* Khoảng cách trên so với logo công thương */
+    display: flex;
+     /* Phân phối đều các biểu tượng */
+    text-align: center;
+    gap: 15px; /* Thêm khoảng cách giữa các biểu tượng */
+    flex-wrap: nowrap;
+}
+.container3 .box2 {
+    margin-left: 10px;
+    width: 840px; /* Đặt chiều rộng cho box2 */
+    height: auto; /* Đặt chiều cao tự động để phù hợp với nội dung */
+    font-size: 13px;
+    padding: 10px;
+}
+
+.container3 .box2 .multibox1 {
+    display: flex; /* Để các minibox nằm ngang */
+    justify-content: space-between; /* Phân phối đều các minibox */
+    gap: 10px; /* Khoảng cách giữa các minibox */
+}
+
+.container3 .box2 .minibox1,
+.container3 .box2 .minibox2,
+.container3 .box2 .minibox3 {
+    text-align: left;
+    width: auto; /* Đặt chiều rộng cho mỗi minibox */
+    max-height: 185px; /* Đặt chiều cao tự động để phù hợp với nội dung */
+}
+
+.container3 .box2 .minibox1 h2,
+.container3 .box2 .minibox2 h2,
+.container3 .box2 .minibox3 h2 {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Thêm khoảng cách dưới tiêu đề */
+}
+
+.container3 .box2 h3 {
+    margin-top: 30px; /* Giảm khoảng cách trên cho "LIÊN HỆ" */
+    text-align: left; /* Căn lề bên trái */
+    font-size: 16px; /* Kích thước chữ cho tiêu đề "LIÊN HỆ" */
+    align-self: flex-start; /* Đẩy "LIÊN HỆ" về bên trái */
+}
+.container3 .box2 .multibox2 {
+    display: flex; /* Để các minibox nằm ngang */
+
+    gap: 130px; /* Khoảng cách giữa các minibox */
+}
+.container3 .box2 .multibox2 .box4,
+.container3 .box2 .multibox2 .box5,
+.container3 .box2 .multibox2 .box6 {
+    display: flex; /* Để các minibox nằm ngang */
+    justify-content: space-between; /* Phân phối đều các minibox */
+    gap: 10px; /* Khoảng cách giữa các minibox */
+}
+
+.container3 .box2 .multibox3 .img1{
+    margin-top: 10px;
+    max-height: 80px;
+    display: flex; /* Để các minibox nằm ngang */
+    justify-content: space-between; /* Phân phối đều các minibox */
+    gap: 10px; /* Khoảng cách giữa các minibox */
+}
+
+.container3 .box2 .multibox3 .box7 .img2{
+    margin-left: 80px;
+    margin-top: 15px;
+    max-height: 80px;
+    text-align: center;
+    
+    display: flex; /* Để các minibox nằm ngang */
+    justify-content: space-between; /* Phân phối đều các minibox */
+    gap: 200px; /* Khoảng cách giữa các minibox */
+}
+.container3 .box2 .multibox3 .box7 {
+    margin-top: 15px;
+    max-height: 80px;
+    display: flex; /* Để các minibox nằm ngang */
+    justify-content: center; /* Phân phối đều các minibox */
+}
+.container3 .box8 {
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung của box8 */
+    align-items: center; /* Căn giữa theo chiều dọc nếu cần */
+    padding: 20px 0; /* Thêm khoảng cách phía trên và dưới */
+}
+
+.container3 .box8 .footer-text {
+    text-align: center;
+    margin-top: 0; /* Điều chỉnh margin-top nếu cần */
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5; /* Đảm bảo văn bản có khoảng cách giữa các dòng dễ đọc */
+}
+.container2 {
+    margin: 700px auto 10px;
+    padding: 20px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 1264px; 
+    background-color: #9FA7AB;
+    display: flex;
+    justify-content: center; /* Căn giữa container theo chiều ngang */
+    align-items: center; /* Căn giữa các phần tử bên trong theo chiều dọc */
+    text-align: center;
+}
+
+.container2 > div {
+    display: flex; /* Để xếp hàng ngang cho nội dung bên trong */
+    justify-content: center; /* Căn giữa nội dung bên trong */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    width: 100%;
+}
+
+.container2 .bar {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center; /* Căn giữa nội dung của bar theo chiều dọc */
+    margin-right: 20px; /* Thêm khoảng cách giữa bar và input */
+}
+
+.container2 .search {
+    position: relative;
+    display: flex;
+    align-items: center; /* Căn giữa input và button theo chiều dọc */
+}
+
+.container2 .search input {
+    width: 400px;
+    height: 50px;
+    padding: 0 80px 0 24px;
+    border-radius: 5px;
+    border: 1px solid #CDCFD0;
+    color: #000000;
+}
+
+.container2 .search .searchArea {
+    position: absolute;
+    width: 115px;
+    height: 41px;
+    border-radius: 5px;
+    background-color: #F7941E;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
