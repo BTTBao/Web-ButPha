@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="buyMenu.css">
+    <link rel="stylesheet" href="mainContent.css">
     <style>
         body {
             font-family: nunito-sans, sans-serif, Helvetica, Arial;
@@ -29,7 +30,6 @@
 
 <body>
     <div class="main-menu"><div class="sale"></div></div>
-
     <div class="container">
 
         <div class="header-menu">
@@ -572,52 +572,102 @@
         </div>
 
         <div class="main-content">
-            <!-- Nội dung chính của trang ở đây -->
+            <div class="banner">
+                <div class="item-1"><img src="/image/main-content/Trangdoitac_1024_Resize_Slidebanner_840x320.webp" alt=""></div>
+                <img src="image/main-content/BtaskKee_392x156.webp" alt="">
+                <img src="image/main-content/392x156_vnpay_t10.webp" alt="">
+            </div>
+            <div class="small-banner">
+                <img src="image/main-content/sban1.webp" alt="">
+                <img src="image/main-content/sban2.webp" alt="">
+                <img src="image/main-content/sban3.webp" alt="">
+                <img src="image/main-content/sban4.webp" alt="">
+            </div>
+            <div class="menu-item">
+                <div class="item">
+                    <img src="image/menu-item/item1.webp" alt="">
+                    <p>Đoá Hồng <br>Tri thức</p>
+                </div>
+                <div class="item">
+                    <img src="image/menu-item/item2.webp" alt="">
+                    <p>MCBooks</p>  
+                </div>
+                <div class="item">
+                    <img src="image/menu-item/item3.webp" alt="">
+                    <p>Kinh Tế</p>  
+                </div>
+                <div class="item">
+                    <img src="image/menu-item/item4.webp" alt="">
+                    <p>Sản Phẩm <br>Được Trợ Giá</p>  
+                </div>
+                <div class="item">
+                    <img src="image/menu-item/item5.webp" alt="">
+                    <p>Manga</p>
+                </div>
+                <div class="item">
+                    <img src="image/menu-item/item6.webp" alt="">
+                    <p>Flash Sale</p>  
+                </div>
+                <div class="item">
+                    <img src="image/menu-item/item7.webp" alt="">
+                    <p>Mã Giảm Giá</p>  
+                </div>
+                <div class="item">
+                    <img src="image/menu-item/item8.webp" alt="">
+                    <p>Ngoại Văn</p>
+                </div>
+                <div class="item">
+                    <img src="image/menu-item/item9.webp" alt="">
+                    <p>Phiên Chợ Sách Cũ</p>  
+                </div>                <div class="item">
+                    <img src="image/menu-item/item10.webp" alt="">
+                    <p>Sản Phẩm<br>Mới</p>  
+                </div>                
+            </div>
         </div>
-
-        <script>
-            // Lấy tất cả các mục li trong sub-menu
-            const subMenuItems = document.querySelectorAll('.header-menu > .bar >ul > li > .submenu-main > .menuTotal > .sub-menu > li');
-            const menuItem = document.querySelector('.header-menu .bar li:nth-child(2)'); // Nút mở menu
-
-            // Hàm tự động chọn và thêm lớp active cho mục đầu tiên
-            function activateFirstItem() {
-                const isAnyActive = Array.from(subMenuItems).some(item => item.classList.contains('active'));
-
-                if (!isAnyActive && subMenuItems.length > 0) {
-                    subMenuItems[0].classList.add('active'); // Thêm lớp active cho mục đầu tiên
-                }
-            }
-
-            // Thêm sự kiện khi menu được hiển thị
-            menuItem.addEventListener('mouseenter', () => {
-                activateFirstItem(); // Kích hoạt mục đầu tiên khi hover vào menu
-            });
-
-            // Khi di chuột qua các mục trong sub-menu
-            subMenuItems.forEach(item => {
-                item.addEventListener('mouseenter', () => {
-                    // Nếu mục đang hover không có lớp active, xóa lớp active khỏi tất cả
-                    if (!item.classList.contains('active')) {
-                        subMenuItems.forEach(subItem => subItem.classList.remove('active')); // Xóa active từ tất cả
-                        item.classList.add('active'); // Thêm active cho mục đang hover
-                    }
-                });
-
-                item.addEventListener('mouseleave', () => {
-                    // Không làm gì ở đây
-                    // Giữ lớp active cho mục đang hover
-                });
-            });
-
-            // Khi chuột rời khỏi vùng chứa của menu
-            menuItem.addEventListener('mouseleave', () => {
-                // Không làm gì, giữ lớp active cho mục hiện tại
-            });
-
-
-
-        </script>
+        <script src="submenu.js"></script>
+    </div>
+    <div class="menu-flashsale">
+        <div class="flashsale-content">
+            <div class="flashsale-content-title">
+                <img src="image/flash-sale/label-flashsale.svg" alt="">
+            </div>
+            <div class="flashsale-content-column">
+                <img src="image/flash-sale/truyen1.webp" alt="">
+                <p>Nhóc Maruko - Tập 10 - Tặng Kèm Set Postcard Polaroid</p>
+                <p>20.000 đ</p><span>-50%</span>
+                <p>40.000</p>
+                <p>Đã bán 0</p>
+            </div>
+            <div class="flashsale-content-column">
+                <img src="image/flash-sale/truyen1.webp" alt="">
+                <p>Nhóc Maruko - Tập 10 - Tặng Kèm Set Postcard Polaroid</p>
+                <p>20.000 đ</p><span>-50%</span>
+                <p>40.000</p>
+                <p>Đã bán 0</p>
+            </div>
+            <div class="flashsale-content-column">
+                <img src="image/flash-sale/truyen1.webp" alt="">
+                <p>Nhóc Maruko - Tập 10 - Tặng Kèm Set Postcard Polaroid</p>
+                <p>20.000 đ</p><span>-50%</span>
+                <p>40.000</p>
+                <p>Đã bán 0</p>
+            </div>
+            <div class="flashsale-content-column">
+                <img src="image/flash-sale/truyen1.webp" alt="">
+                <p>Nhóc Maruko - Tập 10 - Tặng Kèm Set Postcard Polaroid</p>
+                <p>20.000 đ</p><span>-50%</span>
+                <p>40.000</p>
+                <p>Đã bán 0</p>
+            </div>
+            <div class="flashsale-content-column">
+                <img src="image/flash-sale/truyen1.webp" alt="">
+                <p>Nhóc Maruko - Tập 10 - Tặng Kèm Set Postcard Polaroid</p>
+                <p>20.000 đ</p><span>-50%</span>
+                <p>40.000</p>
+                <p>Đã bán 0</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

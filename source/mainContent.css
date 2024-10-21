@@ -1,0 +1,187 @@
+.main-content
+{
+    max-width: 1200px; /* Chiều rộng tối đa */
+    margin: auto; /* Căn giữa */
+    padding: 0;   
+}
+/* ===============menubarner================= */
+.banner
+{
+    margin-top: 20px;
+    width: 1200px;
+    height: 336px;
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: auto 392px;
+}
+.banner img
+{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.item-1
+{
+    width: 830px;
+    height: 316.16px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/* ===============menubarner================= */
+.small-banner
+{
+    margin-top: 10px;
+    height: 336px;
+    display: grid;
+    grid-template-columns: repeat(4, 297px); 
+    column-gap: 20px;
+}
+.small-banner img
+{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.menu-item
+{
+    margin-top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    width: 1200px;
+    height: 100px;
+}
+.menu-item>.item>img
+{
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+.menu-item>.item
+{
+    font-size:14px;
+    font-weight: 600;
+    text-align: center;
+}
+/* =====================flash-sale============== */
+.menu-flashsale {
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    background-image: url('image/flash_sale_background_image.webp'); /* Thay 'your-image-url.jpg' bằng URL của hình ảnh */
+    width: 100%;
+    height: 450.29px; /* Chiều cao của menu */
+}
+.flashsale-content
+{
+    max-width: 1260px;
+    margin: auto;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto auto auto;
+}
+.flashsale-content > .flashsale-content-title
+{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 1260px;
+    height: 62px;
+    row-gap: 20px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.flashsale-content > .flashsale-content-title >img
+{
+    position: absolute;
+    width: 128.7px;
+    height: 26px;
+    left: 30px;
+    top:17px
+}
+
+.flashsale-content > .flashsale-content-column
+{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 232.4px;
+    height: 328.3px;  
+}
+.flashsale-content > .flashsale-content-column>img
+{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 190px;
+    height: 190px;
+    cursor: pointer;
+}
+.flashsale-content > .flashsale-content-column>p:nth-child(2)
+{
+    position: absolute;
+    font-size: 14px;
+    text-align: left;
+    bottom: 75px;
+    left:10px;
+    cursor: pointer;
+}
+.flashsale-content > .flashsale-content-column>p:nth-child(3)
+{
+    position: absolute;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    color:#C92127;
+    bottom: 45px;
+    left:10px
+}
+.flashsale-content > .flashsale-content-column>p:nth-child(5)
+{
+    position: absolute;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: left;
+    color:#888888;
+    bottom: 25px;
+    text-decoration: line-through;
+    left:10px
+}
+.flashsale-content > .flashsale-content-column >p:nth-child(6)
+{
+    position: absolute;
+    width: 210px;
+    height: 15px;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #ffffff;
+    bottom: 0;
+    left: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flashsale-content > .flashsale-content-column > span {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: #C92127;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    bottom: 61px;
+    left: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* =====================flash-sale============== */
