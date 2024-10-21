@@ -86,7 +86,6 @@
     border-radius: 10px;
     width: 1260px;
     height: 62px;
-    row-gap: 20px;
     grid-column-start: 1;
     grid-column-end: 6;
 }
@@ -185,14 +184,14 @@
     position: relative;
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 .menu-list>.menulist-title
 {
     position: absolute;
     border-bottom: #C92127 solid 2px;
     height: 30px;
-    left: 10px;
+    left: 30px;
     top: 10px;
     font-size: 14px;
     font-weight: bold;
@@ -200,12 +199,89 @@
     cursor: pointer;
 
 }
-.menu-list>.menulist-content
-{
+.menu-list > .menulist-content {
     position: absolute;
     display: grid;
+    border-top: #888888 solid 1px;
+    top: 42px;
     width: 100%;
     height: auto;
-    border: #d6d0d0 solid 1px;
-    top: 41.5px;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto auto auto;
 }
+
+.menulist-column {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 236px;
+    height: 336px;
+    font-size: 50px;
+    text-align: center;
+}
+.menulist-seemore
+{
+    position: absolute;
+    bottom:-25px;
+    text-align: center;
+    line-height: 35px;
+    left: 325px;
+}
+/* ======================================STLYLE=============================================== */
+.img-style-1
+{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 195px;
+    height: 190px;
+    cursor: pointer;
+}
+.text-style-1
+{
+    position: absolute;
+    font-size: 14px;
+    text-align: left;
+    bottom: 75px;
+    left:10px;
+    cursor: pointer;
+}
+.text-style-2
+{
+    position: absolute;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    color:#C92127;
+    bottom: 45px;
+    left:10px
+}
+.text-style-3
+{
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: #C92127;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    bottom: 46px;
+    left: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.text-style-4
+{
+    position: absolute;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: left;
+    color:#888888;
+    bottom: 25px;
+    text-decoration: line-through;
+    left:10px
+}
+/* ================================================================================================= */
