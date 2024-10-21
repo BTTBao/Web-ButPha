@@ -185,3 +185,33 @@
     align-items: center;
 }
 /* =====================flash-sale============== */
+
+.menu-list
+{
+    position: relative;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; 
+}
+.menu-list>.menulist-title
+{
+    position: absolute;
+    border-bottom: #C92127 solid 2px;
+    height: 30px;
+    left: 10px;
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#C92127;
+    cursor: pointer;
+
+}
+.menu-list>.menulist-content
+{
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: auto;
+    border: #d6d0d0 solid 1px;
+    top: 41.5px;
+}
