@@ -285,3 +285,28 @@
     left:10px
 }
 /* ================================================================================================= */
+/* DANH MUC SAN PHAM */
+.menu-product
+{
+    position: absolute;
+    display: grid;
+    border-top: #888888 solid 1px;
+    top: 42px;
+    left:20px;
+    width: 1220px;
+    height: auto;
+    column-gap: 10px;
+    margin-top: 20px;
+    grid-template-columns: repeat(10, auto);
+}
+.item-product
+{
+    position: relative;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: auto;
+    height: 200px;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+}
