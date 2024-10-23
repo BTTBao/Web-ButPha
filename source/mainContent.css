@@ -347,6 +347,7 @@
     font-size: 14px; 
 }
 
+
 .block-vote .header-menu-content li {
     display: inline-block; 
     padding: 5px 10px; 
@@ -501,6 +502,7 @@
     margin-left: 10px;
     color: #F39845;
     background-color: #FDEAD2;
+    border-radius: 4px;
     font-size: 20px;
     font-weight: bold;
 }
