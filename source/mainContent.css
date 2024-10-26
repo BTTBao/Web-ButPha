@@ -414,7 +414,7 @@
     flex-direction: row; 
 }
 
-.block-vote .multibox1 .box1 .minibox1 img {
+.block-vote .multibox1 .box1 .minibox1  img {
     width: 100px; 
 }
 
@@ -432,27 +432,28 @@
 
 .block-vote .minibox2 {
     position: absolute;
-    bottom: 250px;
+    bottom: 210px;
     left: 570px;
     width: 650px; /* Đặt chiều rộng cho box2 */
     height: auto; /* Đặt chiều cao tự động để phù hợp với nội dung */
     font-size: 13px;
     padding: 10px;
     display: flex; /* Sử dụng Flexbox */
-
 }
 
 .block-vote .minibox2 img {
+    
+    margin-left: -40px;
     width: 239px;
     height: 239px;
-    margin-right: 10px; /* Khoảng cách giữa ảnh và nội dung */
+         /* Khoảng cách giữa ảnh và nội dung */
 }
 
 
 
 .block-vote .minibox2 .content1 {
-
-    width: auto; /* Để nội dung tự động điều chỉnh chiều rộng */
+    margin-left: 10px;
+    width: 430px; /* Để nội dung tự động điều chỉnh chiều rộng */
 }
 .block-vote .minibox2 .content1 > div:first-of-type {
     /* Thêm các thuộc tính muốn chỉnh sửa cho thẻ div đầu tiên */
@@ -505,5 +506,28 @@
     border-radius: 4px;
     font-size: 20px;
     font-weight: bold;
+}
+.block-vote .multibox1 .box1 .minibox1 ul{
+    list-style-type: none;
+    margin-left: -40px;
+}
+.block-vote .multibox1 .box1 .minibox1 ul li{
+    list-style: none;
+}
+.block-vote .multibox1 .box1 .minibox1 ul li:hover{
+    border-right:red solid 0.1px;
+}
+.block-vote .multibox1 .box1 .minibox2  {
+    display: none;
+}
+.block-vote .multibox1 .box1 .minibox1 ul li.active .minibox2 {
+    display: flex;
+}
+.content-section {
+    display: none;
+}
+
+.content-section.active1 {
+    display: flex;
 }
 
