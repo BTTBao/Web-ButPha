@@ -1,0 +1,55 @@
+.container{
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 1264px; 
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Đẩy box1 về bên trái */
+}
+.container .header{
+    background-color: #181D29;
+    color: #ffffff;
+    font-size: 16px;
+    width: 100.5%;
+    padding: 16px;
+    margin-left: -19px;
+    margin-top: -19px;
+    font-weight: bolder;
+}
+.box-menu{
+    text-align:left;
+    margin-left: -30px;
+}
+.box-submenu ul,
+.box-menu ul{
+    display: inline-flex;
+    list-style: none;
+}
+.box-menu ul li{
+    width: 100;
+    margin: 5px;
+    padding: 5px;
+}
+
+.box-menu ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #7a7b7b;
+}
+.box-submenu ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #7a7b7b;
+}
+.box-submenu .box {
+    flex-direction: row;
+    width: 511px;
+    margin-left: 0%;
+    flex-direction: row;
+}
+.box-submenu .box img{
+    width:100px;
+}
