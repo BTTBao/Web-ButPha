@@ -290,8 +290,7 @@
     display: grid;
     border-top: #888888 solid 1px;
     top: 42px;
-    left:20px;
-    width: 1230px;
+    width: 100%;
     height: auto;
     column-gap: 10px;
     margin-top: 20px;
@@ -527,4 +526,79 @@
 .content-section.active1 {
     display: flex;
 }
+/* ==================================================product-2=================================================== */
+/* =====================================================menu-nextpage============================================== */
+.menu-nextpage-header
+{
+    margin-top: 20px;
+    border: rgb(0, 0, 0) solid 2px;
+    background-color: white;
+    height: 84px;
+    width: 100%; 
+}
+.menu-nextpage-footer
+{
+    position: relative;
+    display: flex;
+    justify-content: center;     /* Canh giữa theo chiều ngang */
+    align-items: center;  
+    border: rgb(0, 0, 0) solid 2px;
+    background-color: white;
+    height: 84px;
+    width: 100%; 
+}
+.menu-nextpage-header img
+{
+    height: 24px;
+    width: 24px;
+    margin: 15px;
+}
+.menu-nextpage-header span
+{
+    position: absolute;
+    margin-top: 17px;
+    margin-left: -5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu-nextpage-header ul
+{
+    display: flex;
+    margin-left:-44px;
+    margin-top: -7px;
+    list-style: none;
+}
+.menu-nextpage-header li
+{
+    padding-left: 20px;
+    cursor: pointer;
+}
+.menu-nextpage-content
+{
+    position: relative;
+    margin-top: 2px;
+    border: rgb(0, 0, 0) solid 2px;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.nextpage-animation
+{
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(10,auto);
+    transition: transform 0.5s ease-in-out;
+}
+.menu-nextpage-content .nextpage-column
+{ 
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 236px;
+    height: 336px;
+    font-size: 50px;
+    text-align: center;
+}
 
+/* =====================================================menu-nextpage============================================== */

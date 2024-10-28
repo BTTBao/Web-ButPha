@@ -217,8 +217,7 @@
     cursor: pointer;
     border-radius: 10px;
 }
-.submit-register
-{
+.submit-register {
     position: absolute;
     font-weight: bold;
     color: #C92127;
@@ -229,6 +228,9 @@
     height: 35px;
     cursor: pointer;
     border-radius: 10px; 
+    display: flex;               /* Chuyển phần tử thành flex container */
+    align-items: center;         /* Canh giữa theo chiều dọc */
+    justify-content: center;     /* Canh giữa theo chiều ngang */
 }
 .header-menu .bar .menuLogin
 {
@@ -446,10 +448,10 @@
 }
 .container3 {
     margin: 10px auto;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 4px;
     width: 100%;
-    max-width: 1264px; 
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -596,10 +598,10 @@
 }
 .container2 {
     margin: 40px auto 30px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 4px;
     width: 100%;
-    max-width: 1264px; 
     background-color: #9FA7AB;
     display: flex;
     justify-content: center; /* Căn giữa container theo chiều ngang */
@@ -652,7 +654,7 @@
 }
 .containerr {
     position: relative;
-    width: 1260px; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     margin: 40px auto 30px;
     overflow: hidden;
     background-color: white;
@@ -708,9 +710,10 @@
     overflow: hidden;
     display: flex;
     justify-content: left;
-    padding: 22px;
+    padding-bottom: 22px;
+    padding-top:22px;
     margin: 1px auto;
-    width: 99%;
+    width: 100%;
    
 }
 
@@ -728,15 +731,14 @@
 }
 
 .outer-container {
-    border: 2px solid white;
-    padding: 20px;
-    width: 99%;
+    width: 100%;
     background-color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 .container0 {
     display: flex;
+    padding-left: 40px;
     transition: transform 0.5s ease;
 }
 .item0 {
