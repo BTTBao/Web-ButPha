@@ -16,8 +16,6 @@
 }
 .item-1
 {
-    width: 830px;
-    height: 316.16px;
     grid-row-start: 1;
     grid-row-end: 3;
 }
@@ -69,15 +67,6 @@
     background-image: url('image/flash_sale_background_image.webp'); /* Thay 'your-image-url.jpg' bằng URL của hình ảnh */
     width: 100%;
     height: 450.29px; /* Chiều cao của menu */
-}
-.flashsale-content
-{
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    column-gap: 10px;
-    row-gap: 20px;
-    grid-template-columns: auto auto auto auto auto;
 }
 .flashsale-content > .flashsale-content-title
 {
@@ -177,7 +166,7 @@
     justify-content: center;
     align-items: center;
 }
-/* =====================flash-sale============== */
+/* =====================hallowern============== */
 
 .menu-list
 {
@@ -186,17 +175,26 @@
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-.menu-list>.menulist-title
+.menu-list > .menulist-title
 {
     position: absolute;
+    left: 30px;
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#C92127;
+    cursor: pointer;
     border-bottom: #C92127 solid 2px;
+    height: 31px;
+    /* border-bottom: #C92127 solid 2px;
+    margin: 11px;
     height: 30px;
     left: 30px;
     top: 40px;
     font-size: 14px;
     font-weight: bold;
     color:#C92127;
-    cursor: pointer;
+    cursor: pointer; */
 
 }
 .menu-list > .menulist-content {
@@ -293,7 +291,7 @@
     border-top: #888888 solid 1px;
     top: 42px;
     left:20px;
-    width: 1220px;
+    width: 1230px;
     height: auto;
     column-gap: 10px;
     margin-top: 20px;
@@ -315,8 +313,7 @@
 .block-vote {
     margin: 10px auto;
     padding: 20px;
-    width: 100%; 
-    max-width: 1264px; 
+    width: 1220px; 
     background-color: white;
     display: flex; 
     flex-direction: column; 

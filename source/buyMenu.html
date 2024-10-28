@@ -18,13 +18,28 @@
             background-color: #F0F0F0; /* Màu nền cho toàn bộ trang */
         }
         .container {
-            max-width: 1200px; /* Chiều rộng tối đa */
+            max-width: 1230px; /* Chiều rộng tối đa */
             margin: auto; /* Căn giữa */
             padding: 0; /* Padding trong container */
         }
         .main-content
         {
-            max-width: 1200px; /* Chiều rộng tối đa */
+            max-width: 1230px;
+            margin: auto;
+            padding: 0;   
+        }
+        .flashsale-content
+        {
+            max-width: 1230px;
+            margin: auto;
+            display: grid;
+            column-gap: 10px;
+            row-gap: 20px;
+            grid-template-columns: auto auto auto auto auto;
+        }
+        footer
+        {
+            max-width: 1230px; /* Chiều rộng tối đa */
             margin: auto; /* Căn giữa */
             padding: 0;   
         }
@@ -576,7 +591,7 @@
 
         <div class="main-content">
             <div class="banner">
-                <div class="item-1"><img src="/image/main-content/Trangdoitac_1024_Resize_Slidebanner_840x320.webp" alt=""></div>
+                <img src="image/main-content/banner9.webp" alt="" class="item-1">
                 <img src="image/main-content/BtaskKee_392x156.webp" alt="">
                 <img src="image/main-content/392x156_vnpay_t10.webp" alt="">
             </div>
@@ -674,9 +689,7 @@
     </div>
     <div class="main-content">
         <div class="menu-list" style="width: 1260px;height: 468.3px;">
-            <div class="menulist-title">
-                Happy Halloween
-            </div>
+            <div class="menulist-title">Happy Halloween</div>
             <div class="menulist-content">
                 <div class="menulist-column">
                     <img src="image/flash-sale/truyen1.webp" alt="" class="img-style-1">
@@ -2522,135 +2535,180 @@
                 document.querySelector('.header-menu-content a[data-category="vanhoc"]').click();
             </script>
     </div>
+<div class="main-content">
    <!-- Navigation Bar -->
    <div class="navbar">
-    <a  onclick="showSection('denban')">Đèn Bàn</a>
-    <a  onclick="showSection('binhnuoc')">Bình Nước</a>
-    <a onclick="showSection('dochoilaprap')">Đồ Chơi Lắp Ráp</a>
+        <a  onclick="showSection('denban')">Đèn Bàn</a>
+        <a  onclick="showSection('binhnuoc')">Bình Nước</a>
+        <a onclick="showSection('dochoilaprap')">Đồ Chơi Lắp Ráp</a>
    </div>
-
-<div class="outer-container">
-    <!-- Đèn bàn Section -->
-    <div id="denban" class="section">
-        <div class="container0">
-            <div class="item0">
-                <a href="https://www.fahasa.com/den-led-chong-can-taotronics-5w-tt-dl064-mau-trang.html"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_233036.jpg" alt=""></a>
-                <p>Đèn LED Chống Cận TaoTronics 5W TT-DL064 - Màu Đen</p>
-                <p class="price">330.000 đ <span class="discount">-40%</span></p>
-                <p class="old-price">550.000 đ</p>
-                <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 57</span></p>
+    <div class="outer-container">
+        <!-- Đèn bàn Section -->
+        <div id="denban" class="section">
+            <div class="container0">
+                <div class="item0">
+                    <a href="https://www.fahasa.com/den-led-chong-can-taotronics-5w-tt-dl064-mau-trang.html"><img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_233036.jpg" alt=""></a>
+                    <p>Đèn LED Chống Cận TaoTronics 5W TT-DL064 - Màu Đen</p>
+                    <p class="price">330.000 đ <span class="discount">-40%</span></p>
+                    <p class="old-price">550.000 đ</p>
+                    <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 57</span></p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/den-trang-tri-emma-re19.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935339402893.jpg" alt=""></a>
+                    <p>Đèn Sạc Để Bàn Trang Trí Hình Lucky Emma - Yan Chuang LT-A2103</p>
+                    <p class="price">430.560 đ <span class="discount">-40%</span></p>
+                    <p class="old-price">468.000 đ</p>
+                    <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 51</span></p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/den-led-chong-can-taotronics-7w-tt-dl11-mau-den.html"><img src="https://cdn0.fahasa.com/media/catalog/product/3/9/3900000016322.jpg" alt=""></a>
+                    <p>Đèn LED Chống Cận Taotronics 7W TT-DL11 - Màu Đen</p>
+                    <p class="price">408.000 đ <span class="discount">-40%</span></p>
+                    <p class="old-price">680.000 đ</p>
+                    <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 52</span></p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/den-ban-led-doi-mau-dien-quang-dq-ldl06-5w.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934578150084-_1_.jpg" alt=""></a>
+                    <p>Đèn LED Chống Cận TaoTronics 5W TT-DL064 - Màu Đen</p>
+                    <p class="price">739.500 đ <span class="discount">-40%</span></p>
+                    <p class="old-price">850.000 đ</p>
+                    <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 52</span></p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/den-led-chong-can-taotronics-14w-tt-dl02-mau-trang.html"><img src="https://cdn0.fahasa.com/media/catalog/product/3/9/3900000018616.jpg" alt=""></a>
+                    <p>Đèn LED Chống Cận Taotronics 14W TT-DL02 - Màu Trắng</p>
+                    <p class="price">592.800 đ <span class="discount">-40%</span></p>
+                    <p class="old-price">988.000 đ</p>
+                    <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 55</span></p>
+                </div>
             </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/den-trang-tri-emma-re19.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935339402893.jpg" alt=""></a>
-                <p>Đèn Sạc Để Bàn Trang Trí Hình Lucky Emma - Yan Chuang LT-A2103</p>
-                <p class="price">430.560 đ <span class="discount">-40%</span></p>
-                <p class="old-price">468.000 đ</p>
-                <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 51</span></p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/den-led-chong-can-taotronics-7w-tt-dl11-mau-den.html"><img src="https://cdn0.fahasa.com/media/catalog/product/3/9/3900000016322.jpg" alt=""></a>
-                <p>Đèn LED Chống Cận Taotronics 7W TT-DL11 - Màu Đen</p>
-                <p class="price">408.000 đ <span class="discount">-40%</span></p>
-                <p class="old-price">680.000 đ</p>
-                <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 52</span></p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/den-ban-led-doi-mau-dien-quang-dq-ldl06-5w.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934578150084-_1_.jpg" alt=""></a>
-                <p>Đèn LED Chống Cận TaoTronics 5W TT-DL064 - Màu Đen</p>
-                <p class="price">739.500 đ <span class="discount">-40%</span></p>
-                <p class="old-price">850.000 đ</p>
-                <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 52</span></p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/den-led-chong-can-taotronics-14w-tt-dl02-mau-trang.html"><img src="https://cdn0.fahasa.com/media/catalog/product/3/9/3900000018616.jpg" alt=""></a>
-                <p>Đèn LED Chống Cận Taotronics 14W TT-DL02 - Màu Trắng</p>
-                <p class="price">592.800 đ <span class="discount">-40%</span></p>
-                <p class="old-price">988.000 đ</p>
-                <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 55</span></p>
+            <div class="xemthem">
+                <a href="https://www.fahasa.com/bach-hoa-tong-hop/do-dien-gia-dung/den-ban.html?order=created_at&limit=24&p=1">Xem Thêm</a>
             </div>
         </div>
-        <div class="xemthem">
-            <a href="https://www.fahasa.com/bach-hoa-tong-hop/do-dien-gia-dung/den-ban.html?order=created_at&limit=24&p=1">Xem Thêm</a>
+        <!-- Bình Nước Section -->
+        <div id="binhnuoc" class="section">
+            <div class="container0">
+                <div class="item0">
+                    <a href="https://www.fahasa.com/binh-nuoc-hoc-sinh-500-ml-n-caa-534-mau-xanh-duong.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/8/8809637431346-mau1.jpg" alt=""></a>
+                    <p>Bình Nước Học Sinh 500 ml - N.CAA-534 - Màu Xanh Dương</p>
+                    <p class="price">90.100 đ <span class="discount">-15%</span></p>
+                    <p class="old-price">106.000 đ</p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/marvel-binh-dung-nuoc-bang-nhua-captaion-amercan-mau-xanh-duong-800ml-hm8223a1.html"><img src="https://cdn0.fahasa.com/media/catalog/product/6/9/6922111464844-qt.jpg" alt=""></a>
+                    <p>Bình Nước Học Sinh Marvel Avengers 800 ml - Captain America - Zhongshan HM8223A1</p>
+                    <p class="price">253.000 đ <span class="discount">-8%</span></p>
+                    <p class="old-price">275.000 đ</p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/disney-binh-dung-nuoc-bang-nhua-cong-chua-sofia-mau-tim-650ml-hm3363s1.html"><img src="https://cdn0.fahasa.com/media/catalog/product/6/9/6922111497040-qt.jpg" alt=""></a>
+                    <p>Bình Nước Chống Chảy - 500ml</p>
+                    <p class="price">280.600 đ <span class="discount">-8%</span></p>
+                    <p class="old-price">305.000 đ</p>
+                    <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 51</span></p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/disney-binh-dung-nuoc-bang-nhua-gau-lotso-mau-do-720ml-hm8126l.html"><img src="https://cdn0.fahasa.com/media/catalog/product/6/9/6922111463410-qt.jpg" alt=""></a>
+                    <p>Bình Nước Học Sinh Disney Toy Story 720 ml - Gấu Lotso - Zhongshan HM8126L</p>
+                    <p class="price">234.600 đ <span class="discount">-8%</span></p>
+                    <p class="old-price">255.000 đ</p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/binh-nuoc-kita-glow-500-ml-inochi-hin-bikg-0500-mau-hong.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935275212242_1.jpg" alt=""></a>
+                    <p>Bình Nước Kita Glow 500 ml - Inochi HIN.BIKG.0500 - Màu Hồng</p>
+                    <p class="price">104.000 đ <span class="discount">-20%</span></p>
+                    <p class="old-price">130.000 đ</p>
+                </div>
+            </div>
+            <div class="xemthem">
+                <a href="https://www.fahasa.com/bach-hoa-tong-hop/do-dien-gia-dung/binh-nuoc.html?order=created_at&limit=24&p=1">Xem Thêm</a>
+            </div>
         </div>
+        <!-- Đồ chơi lắp ráp Section -->
+        <div id="dochoilaprap" class="section">
+            <div class="container0">
+                <div class="item0">
+                    <a href="https://www.fahasa.com/do-choi-lap-rap-tiem-banh-ngot-cua-gabby-bakey-with-cakey-fun-lego-gabby-s-dollhouse-10785-58-manh-ghep.html"><img src="https://cdn0.fahasa.com/media/catalog/product/5/7/5702017424095.jpg" alt=""></a>
+                    <p>Đồ Chơi Lắp Ráp Tiệm Bánh Ngọt Của Gabby - Bakey with Cakey Fun - Lego Gabby's Dollhouse 10785 (58 Mảnh Ghép)</p>
+                    <p class="price">278.100 đ <span class="discount">-10%</span></p>
+                    <p class="old-price">309.000 đ</p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/do-choi-lap-rap-hero-infinity-model-kit-armor-version-11-guan-yu-battle-suit-blokees-85017-590313.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935339408253_1.jpg" alt=""></a>
+                    <p>Đồ Chơi Lắp Ráp Hero Infinity - Model Kit - Armor Version 11 - Guan Yu - Battle Suit - Blokees 85017</p>
+                    <p class="price">224.100 đ <span class="discount">-10%</span></p>
+                    <p class="old-price">249.000 đ</p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/do-choi-lap-rap-xe-may-cua-iron-man-va-nguoi-khong-lo-iron-man-with-bike-and-the-hulk-lego-superheroes-76287-68-manh-ghep.html"><img src="https://cdn0.fahasa.com/media/catalog/product/5/7/5702017590103.jpg" alt=""></a>
+                    <p>Đồ Chơi Lắp Ráp Xe Máy Của Iron Man Và Người Khổng Lồ - Iron Man with Bike and The Hulk - Lego Superheroes 76287 (68 Mảnh Ghép)</p>
+                    <p class="price">413.100 đ <span class="discount">-10%</span></p>
+                    <p class="old-price">459.000 đ</p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/do-choi-lap-rap-hero-infinity-galaxy-version-tubro-01-hero-s-journey-blokees-85015-mau-san-pham-giao-ngau-nhien.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935339408222_1.jpg" alt=""></a>
+                    <p>Đồ Chơi Lắp Ráp Hero Infinity - Galaxy Version Tubro 01 - Hero‘s Journey - Blokees 85015 (Mẫu Sản Phẩm Giao Ngẫu Nhiên)</p>
+                    <p class="price">89.100 đ <span class="discount">-10%</span></p>
+                    <p class="old-price">99.000 đ</p>
+                </div>
+                <div class="item0">
+                    <a href="https://www.fahasa.com/do-choi-lap-rap-mo-hinh-khung-long-3d-bang-go-playfulmario-6804-2-7-48-manh-ghep-tyrannosaurus.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936190513230-mau3.jpg" alt=""></a>
+                    <p>Đồ Chơi Lắp Ráp Mô Hình Khủng Long 3D Bằng Gỗ - PlayfulMario 6804/2-7 (48 Mảnh Ghép) - Tyrannosaurus</p>
+                    <p class="price">120.930 đ <span class="discount">-13%</span></p>
+                    <p class="old-price">139.000 đ</p>
+                    <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 50</span></p>
+                </div>
+            </div>
+            <div class="xemthem">
+                <a href="https://www.fahasa.com/bach-hoa-tong-hop/do-dien-gia-dung/binh-nuoc.html?order=created_at&limit=24&p=1">Xem Thêm</a>
+            </div>
     </div>
-    <!-- Bình Nước Section -->
-    <div id="binhnuoc" class="section">
-        <div class="container0">
-            <div class="item0">
-                <a href="https://www.fahasa.com/binh-nuoc-hoc-sinh-500-ml-n-caa-534-mau-xanh-duong.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/8/8809637431346-mau1.jpg" alt=""></a>
-                <p>Bình Nước Học Sinh 500 ml - N.CAA-534 - Màu Xanh Dương</p>
-                <p class="price">90.100 đ <span class="discount">-15%</span></p>
-                <p class="old-price">106.000 đ</p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/marvel-binh-dung-nuoc-bang-nhua-captaion-amercan-mau-xanh-duong-800ml-hm8223a1.html"><img src="https://cdn0.fahasa.com/media/catalog/product/6/9/6922111464844-qt.jpg" alt=""></a>
-                <p>Bình Nước Học Sinh Marvel Avengers 800 ml - Captain America - Zhongshan HM8223A1</p>
-                <p class="price">253.000 đ <span class="discount">-8%</span></p>
-                <p class="old-price">275.000 đ</p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/disney-binh-dung-nuoc-bang-nhua-cong-chua-sofia-mau-tim-650ml-hm3363s1.html"><img src="https://cdn0.fahasa.com/media/catalog/product/6/9/6922111497040-qt.jpg" alt=""></a>
-                <p>Bình Nước Chống Chảy - 500ml</p>
-                <p class="price">280.600 đ <span class="discount">-8%</span></p>
-                <p class="old-price">305.000 đ</p>
-                <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 51</span></p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/disney-binh-dung-nuoc-bang-nhua-gau-lotso-mau-do-720ml-hm8126l.html"><img src="https://cdn0.fahasa.com/media/catalog/product/6/9/6922111463410-qt.jpg" alt=""></a>
-                <p>Bình Nước Học Sinh Disney Toy Story 720 ml - Gấu Lotso - Zhongshan HM8126L</p>
-                <p class="price">234.600 đ <span class="discount">-8%</span></p>
-                <p class="old-price">255.000 đ</p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/binh-nuoc-kita-glow-500-ml-inochi-hin-bikg-0500-mau-hong.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935275212242_1.jpg" alt=""></a>
-                <p>Bình Nước Kita Glow 500 ml - Inochi HIN.BIKG.0500 - Màu Hồng</p>
-                <p class="price">104.000 đ <span class="discount">-20%</span></p>
-                <p class="old-price">130.000 đ</p>
-            </div>
-        </div>
-        <div class="xemthem">
-            <a href="https://www.fahasa.com/bach-hoa-tong-hop/do-dien-gia-dung/binh-nuoc.html?order=created_at&limit=24&p=1">Xem Thêm</a>
-        </div>
-    </div>
-    <!-- Đồ chơi lắp ráp Section -->
-    <div id="dochoilaprap" class="section">
-        <div class="container0">
-            <div class="item0">
-                <a href="https://www.fahasa.com/do-choi-lap-rap-tiem-banh-ngot-cua-gabby-bakey-with-cakey-fun-lego-gabby-s-dollhouse-10785-58-manh-ghep.html"><img src="https://cdn0.fahasa.com/media/catalog/product/5/7/5702017424095.jpg" alt=""></a>
-                <p>Đồ Chơi Lắp Ráp Tiệm Bánh Ngọt Của Gabby - Bakey with Cakey Fun - Lego Gabby's Dollhouse 10785 (58 Mảnh Ghép)</p>
-                <p class="price">278.100 đ <span class="discount">-10%</span></p>
-                <p class="old-price">309.000 đ</p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/do-choi-lap-rap-hero-infinity-model-kit-armor-version-11-guan-yu-battle-suit-blokees-85017-590313.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935339408253_1.jpg" alt=""></a>
-                <p>Đồ Chơi Lắp Ráp Hero Infinity - Model Kit - Armor Version 11 - Guan Yu - Battle Suit - Blokees 85017</p>
-                <p class="price">224.100 đ <span class="discount">-10%</span></p>
-                <p class="old-price">249.000 đ</p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/do-choi-lap-rap-xe-may-cua-iron-man-va-nguoi-khong-lo-iron-man-with-bike-and-the-hulk-lego-superheroes-76287-68-manh-ghep.html"><img src="https://cdn0.fahasa.com/media/catalog/product/5/7/5702017590103.jpg" alt=""></a>
-                <p>Đồ Chơi Lắp Ráp Xe Máy Của Iron Man Và Người Khổng Lồ - Iron Man with Bike and The Hulk - Lego Superheroes 76287 (68 Mảnh Ghép)</p>
-                <p class="price">413.100 đ <span class="discount">-10%</span></p>
-                <p class="old-price">459.000 đ</p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/do-choi-lap-rap-hero-infinity-galaxy-version-tubro-01-hero-s-journey-blokees-85015-mau-san-pham-giao-ngau-nhien.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935339408222_1.jpg" alt=""></a>
-                <p>Đồ Chơi Lắp Ráp Hero Infinity - Galaxy Version Tubro 01 - Hero‘s Journey - Blokees 85015 (Mẫu Sản Phẩm Giao Ngẫu Nhiên)</p>
-                <p class="price">89.100 đ <span class="discount">-10%</span></p>
-                <p class="old-price">99.000 đ</p>
-            </div>
-            <div class="item0">
-                <a href="https://www.fahasa.com/do-choi-lap-rap-mo-hinh-khung-long-3d-bang-go-playfulmario-6804-2-7-48-manh-ghep-tyrannosaurus.html"><img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936190513230-mau3.jpg" alt=""></a>
-                <p>Đồ Chơi Lắp Ráp Mô Hình Khủng Long 3D Bằng Gỗ - PlayfulMario 6804/2-7 (48 Mảnh Ghép) - Tyrannosaurus</p>
-                <p class="price">120.930 đ <span class="discount">-13%</span></p>
-                <p class="old-price">139.000 đ</p>
-                <p style="color: rgb(145, 135, 135); font-size: small;">Đã bán<span style="color: black;"> 50</span></p>
-            </div>
-        </div>
-        <div class="xemthem">
-            <a href="https://www.fahasa.com/bach-hoa-tong-hop/do-dien-gia-dung/binh-nuoc.html?order=created_at&limit=24&p=1">Xem Thêm</a>
-        </div>
 </div>
+<div class="menu-list" style="width: 1260px;height: 468.3px;">
+    <div class="menulist-title">Lịch Bàn 2025</div>
+    <div class="menulist-content">
+        <div class="menulist-column">
+            <img src="image/flash-sale/truyen1.webp" alt="" class="img-style-1">
+            <span class="text-style-1">Quả Bí Ngô Đèn Led Trang Trí Halloween - WanLongDa 129-12</span>
+            <span class = "text-style-2">159.100 đ</span>
+            <span class="text-style-3">-26%</span>
+            <span class="text-style-4">215.000 đ</span>
+        </div>
+        <div class="menulist-column">
+            <img src="image/flash-sale/truyen1.webp" alt="" class="img-style-1">
+            <span class="text-style-1">Quả Bí Ngô Đèn Led Trang Trí Halloween - WanLongDa 129-12</span>
+            <span class = "text-style-2">159.100 đ</span>
+            <span class="text-style-3">-26%</span>
+            <span class="text-style-4">215.000 đ</span>
+        </div>
+        <div class="menulist-column">
+            <img src="image/flash-sale/truyen1.webp" alt="" class="img-style-1">
+            <span class="text-style-1">Quả Bí Ngô Đèn Led Trang Trí Halloween - WanLongDa 129-12</span>
+            <span class = "text-style-2">159.100 đ</span>
+            <span class="text-style-3">-26%</span>
+            <span class="text-style-4">215.000 đ</span>
+        </div>
+        <div class="menulist-column">
+            <img src="image/flash-sale/truyen1.webp" alt="" class="img-style-1">
+            <span class="text-style-1">Quả Bí Ngô Đèn Led Trang Trí Halloween - WanLongDa 129-12</span>
+            <span class = "text-style-2">159.100 đ</span>
+            <span class="text-style-3">-26%</span>
+            <span class="text-style-4">215.000 đ</span>
+        </div>
+        <div class="menulist-column">
+            <img src="image/flash-sale/truyen1.webp" alt="" class="img-style-1">
+            <span class="text-style-1">Quả Bí Ngô Đèn Led Trang Trí Halloween - WanLongDa 129-12</span>
+            <span class = "text-style-2">159.100 đ</span>
+            <span class="text-style-3">-26%</span>
+            <span class="text-style-4">215.000 đ</span>
+        </div>
+    </div>
+    <div class="menulist-seemore">
+        <div class="submit-register" style="bottom: 50px; left: 203px">Xem thêm</div>
+    </div>
+<!-- ================================================Tiep-theo========================================================== -->
+ 
 </div>
 
 <script>
@@ -2665,6 +2723,7 @@
     }
     showSection('denban');
 </script>
+    <div class="main-content">
     <div class="containerr">
         <div class="logo-container">
             <a href="https://www.fahasa.com/mc-books"><img src="https://cdn0.fahasa.com/media/wysiwyg/Hien_UI/LogoNCC/5_NCC_McBook_115x115.png" alt=""></a>
@@ -2684,6 +2743,7 @@
             <a href="#"><img src="https://cdn0.fahasa.com/media/wysiwyg/Hien_UI/LogoNCC/NCC_TueTri_115x115.png" alt=""></a>
         </div>
         <button class="arrow arrow-right" onclick="moveCarousel()">&#10095;</button> 
+    </div>
     </div>
     <script>
         let currentPosition = 0;
