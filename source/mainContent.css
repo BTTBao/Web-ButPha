@@ -528,12 +528,17 @@
 }
 /* ==================================================product-2=================================================== */
 /* =====================================================menu-nextpage============================================== */
-.menu-nextpage-header
+.menu-nextpage-title
 {
     margin-top: 20px;
-    border: rgb(0, 0, 0) solid 2px;
     background-color: white;
-    height: 84px;
+    height: 54px;
+    width: 100%; 
+}
+.menu-nextpage-header
+{
+    background-color: white;
+    height: 34px;
     width: 100%; 
 }
 .menu-nextpage-footer
@@ -542,18 +547,17 @@
     display: flex;
     justify-content: center;     /* Canh giữa theo chiều ngang */
     align-items: center;  
-    border: rgb(0, 0, 0) solid 2px;
     background-color: white;
     height: 84px;
     width: 100%; 
 }
-.menu-nextpage-header img
+.menu-nextpage-title img
 {
     height: 24px;
     width: 24px;
     margin: 15px;
 }
-.menu-nextpage-header span
+.menu-nextpage-title span
 {
     position: absolute;
     margin-top: 17px;
@@ -564,8 +568,8 @@
 .menu-nextpage-header ul
 {
     display: flex;
+    margin: 0;
     margin-left:-44px;
-    margin-top: -7px;
     list-style: none;
 }
 .menu-nextpage-header li
@@ -577,7 +581,6 @@
 {
     position: relative;
     margin-top: 2px;
-    border: rgb(0, 0, 0) solid 2px;
     background-color: white;
     height: auto;
     width: 100%;
@@ -588,6 +591,8 @@
     display: grid;
     column-gap: 15px;
     grid-template-columns: repeat(10,auto);
+}
+.nextpage-column {
     transition: transform 0.5s ease-in-out;
 }
 .menu-nextpage-content .nextpage-column

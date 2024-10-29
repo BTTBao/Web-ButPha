@@ -711,8 +711,9 @@
     display: flex;
     justify-content: left;
     padding-bottom: 22px;
-    padding-top:22px;
-    margin: 1px auto;
+    padding-top: 22px;
+    margin-top: 20px;
+    margin-bottom: 1px;
     width: 100%;
    
 }
