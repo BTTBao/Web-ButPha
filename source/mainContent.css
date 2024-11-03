@@ -86,7 +86,97 @@
     left: 30px;
     top:17px
 }
+.flashsale-content > .flashsale-content-title >span:nth-child(6)
+{
+    position: absolute;
+    font-size: 15.6px;
+    color: #1478FC;
+    font-weight: bolder;
+    width: 128.7px;
+    height: 26px;
+    right: 10px;
+    top:24px;
+    cursor: pointer;
+    
+}
+.flashsale-content > .flashsale-content-title >span:nth-child(7)
+{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 19.6px;
+    color: #1478FC;
+    font-weight: bolder;
+    width: 128.7px;
+    height: 26px;
+    right: -75px;
+    top:23px;
+    cursor: pointer;
+}
+.flashsale-content > .flashsale-content-title >span:nth-child(2)
+{
+    position: absolute;
+    font-size: 15.6px;
+    font-weight: bolder;
+    width: 128.7px;
+    height: 26px;
+    left: 170px;
+    top:24px
+}
+.flashsale-content > .flashsale-content-title > span:nth-child(3) {
+    position: absolute;
+    background-color: black;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15.6px;
+    font-weight: bolder;
+    width: 25px;
+    height: 25px;
+    left: 290px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flashsale-content > .flashsale-content-title > span:nth-child(4) {
+    position: absolute;
+    background-color: black;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15.6px;
+    font-weight: bolder;
+    width: 25px;
+    height: 25px;
+    left: 330px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flashsale-content > .flashsale-content-title > span:nth-child(5) {
+    position: absolute;
+    background-color: black;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15.6px;
+    font-weight: bolder;
+    width: 25px;
+    height: 25px;
+    left: 370px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.button-arrow-flashsale
+{
+    position: absolute;
+    transform: rotate(-90deg);
+    height: 1px; 
+    width: 0px;
+    right: 20px;
+    bottom: 12px;
+}
 .flashsale-content > .flashsale-content-column
 {
     position: relative;
