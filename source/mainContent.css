@@ -721,11 +721,16 @@
 .menu-nextpage-content .nextpage-column
 { 
     position: relative;
-    border-radius: 10px;
     width: 236px;
     height: 336px;
+    top:10px;
+    margin-bottom: 30px;
     font-size: 50px;
     text-align: center;
+}
+.nextpage-column:hover
+{
+    box-shadow: 0 0 0 3px rgba(98, 96, 96, 0.1);
 }
 
 /* =====================================================menu-nextpage============================================== */
