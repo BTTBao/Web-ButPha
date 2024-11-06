@@ -666,44 +666,44 @@
         </div>
         <script src="submenu.js"></script>
     </div>
-            <script>
-            let count = 0;
-            const maxCount = 5;
-            const itemWidth = 860;
-            let barHidden = document.querySelectorAll('.item-1 ul li');
-            function onClickButtonRight()
-            {
-                let banner = document.querySelector('.bar-banner');
-                count--;
-                if (count < -maxCount) {
-                    count = 0;
-                }
-                let activeIndex = Math.abs(count);
-                barHidden.forEach((li) => li.classList.remove('active'));
-                if (barHidden[activeIndex]) {
-                    barHidden[activeIndex].classList.add('active');
-                }
+    <script>
+    let count = 0;
+    const maxCount = 5;
+    const itemWidth = 860;
+    let barHidden = document.querySelectorAll('.item-1 ul li');
+    function onClickButtonRight()
+    {
+        let banner = document.querySelector('.bar-banner');
+        count--;
+        if (count < -maxCount) {
+            count = 0;
+        }
+        let activeIndex = Math.abs(count);
+        barHidden.forEach((li) => li.classList.remove('active'));
+        if (barHidden[activeIndex]) {
+            barHidden[activeIndex].classList.add('active');
+        }
 
-                banner.style.transform = `translateX(${count * itemWidth}px)`;
-            }
+        banner.style.transform = `translateX(${count * itemWidth}px)`;
+    }
 
-            function onClickButtonLeft()
-            {
-                let banner = document.querySelector('.bar-banner');
-                count++;
-                if (count > 0) {
-                    count = -maxCount;
-                }
-                let activeIndex = Math.abs(count);
-                barHidden.forEach((li) => li.classList.remove('active'));
-                if (barHidden[activeIndex]) {
-                    barHidden[activeIndex].classList.add('active');
-                }
+    function onClickButtonLeft()
+    {
+        let banner = document.querySelector('.bar-banner');
+        count++;
+        if (count > 0) {
+            count = -maxCount;
+        }
+        let activeIndex = Math.abs(count);
+        barHidden.forEach((li) => li.classList.remove('active'));
+        if (barHidden[activeIndex]) {
+            barHidden[activeIndex].classList.add('active');
+        }
 
-                banner.style.transform = `translateX(${count * itemWidth}px)`;
-            }
-            setInterval(onClickButtonRight, 5000);
-        </script>
+        banner.style.transform = `translateX(${count * itemWidth}px)`;
+    }
+    setInterval(onClickButtonRight, 5000);
+</script>
     <div class="menu-flashsale">
         <div class="flashsale-content">
             <div class="flashsale-content-title">
