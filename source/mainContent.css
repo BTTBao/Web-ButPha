@@ -16,8 +16,6 @@
 }
 .item-1
 {
-    width: 830px;
-    height: 316.16px;
     grid-row-start: 1;
     grid-row-end: 3;
 }
@@ -70,15 +68,6 @@
     width: 100%;
     height: 450.29px; /* Chiều cao của menu */
 }
-.flashsale-content
-{
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    column-gap: 10px;
-    row-gap: 20px;
-    grid-template-columns: auto auto auto auto auto;
-}
 .flashsale-content > .flashsale-content-title
 {
     position: relative;
@@ -97,7 +86,97 @@
     left: 30px;
     top:17px
 }
+.flashsale-content > .flashsale-content-title >span:nth-child(6)
+{
+    position: absolute;
+    font-size: 15.6px;
+    color: #1478FC;
+    font-weight: bolder;
+    width: 128.7px;
+    height: 26px;
+    right: 10px;
+    top:24px;
+    cursor: pointer;
+    
+}
+.flashsale-content > .flashsale-content-title >span:nth-child(7)
+{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 19.6px;
+    color: #1478FC;
+    font-weight: bolder;
+    width: 128.7px;
+    height: 26px;
+    right: -75px;
+    top:23px;
+    cursor: pointer;
+}
+.flashsale-content > .flashsale-content-title >span:nth-child(2)
+{
+    position: absolute;
+    font-size: 15.6px;
+    font-weight: bolder;
+    width: 128.7px;
+    height: 26px;
+    left: 170px;
+    top:24px
+}
+.flashsale-content > .flashsale-content-title > span:nth-child(3) {
+    position: absolute;
+    background-color: black;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15.6px;
+    font-weight: bolder;
+    width: 25px;
+    height: 25px;
+    left: 290px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flashsale-content > .flashsale-content-title > span:nth-child(4) {
+    position: absolute;
+    background-color: black;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15.6px;
+    font-weight: bolder;
+    width: 25px;
+    height: 25px;
+    left: 330px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flashsale-content > .flashsale-content-title > span:nth-child(5) {
+    position: absolute;
+    background-color: black;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15.6px;
+    font-weight: bolder;
+    width: 25px;
+    height: 25px;
+    left: 370px;
+    top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.button-arrow-flashsale
+{
+    position: absolute;
+    transform: rotate(-90deg);
+    height: 1px; 
+    width: 0px;
+    right: 20px;
+    bottom: 12px;
+}
 .flashsale-content > .flashsale-content-column
 {
     position: relative;
@@ -177,7 +256,7 @@
     justify-content: center;
     align-items: center;
 }
-/* =====================flash-sale============== */
+/* =====================hallowern============== */
 
 .menu-list
 {
@@ -186,17 +265,26 @@
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
-.menu-list>.menulist-title
+.menu-list > .menulist-title
 {
     position: absolute;
+    left: 30px;
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#C92127;
+    cursor: pointer;
     border-bottom: #C92127 solid 2px;
+    height: 31px;
+    /* border-bottom: #C92127 solid 2px;
+    margin: 11px;
     height: 30px;
     left: 30px;
     top: 40px;
     font-size: 14px;
     font-weight: bold;
     color:#C92127;
-    cursor: pointer;
+    cursor: pointer; */
 
 }
 .menu-list > .menulist-content {
@@ -228,6 +316,34 @@
     left: 325px;
 }
 /* ======================================STLYLE=============================================== */
+.img-style-2
+{
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+    height: 120px;
+    cursor: pointer;
+}
+.text-style-6 {
+    position: absolute;
+    font-weight: 300;
+    font-size: 11px;
+    text-align: left;
+    color:#888888;
+    bottom: 5px;
+    left:10px
+}
+.text-style-5 {
+    position: absolute;
+    font-weight: 500;
+    width: 150px;
+    font-size: 14px;
+    bottom: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
 .img-style-1
 {
     position: absolute;
@@ -292,8 +408,7 @@
     display: grid;
     border-top: #888888 solid 1px;
     top: 42px;
-    left:20px;
-    width: 1220px;
+    width: 100%;
     height: auto;
     column-gap: 10px;
     margin-top: 20px;
@@ -315,8 +430,7 @@
 .block-vote {
     margin: 10px auto;
     padding: 20px;
-    width: 100%; 
-    max-width: 1264px; 
+    width: 1220px; 
     background-color: white;
     display: flex; 
     flex-direction: column; 
@@ -530,4 +644,154 @@
 .content-section.active1 {
     display: flex;
 }
+/* ==================================================product-2=================================================== */
+/* =====================================================menu-nextpage============================================== */
+.menu-nextpage-title
+{
+    margin-top: 20px;
+    background-color: white;
+    height: 54px;
+    width: 100%;
+    border-top-left-radius: 10px ;border-top-right-radius: 10px ;
+}
+.menu-nextpage-header
+{
+    background-color: white;
+    height: 44px;
+    width: 100%; 
+}
+.menu-nextpage-footer
+{
+    position: relative;
+    display: flex;
+    justify-content: center;     /* Canh giữa theo chiều ngang */
+    align-items: center;  
+    background-color: white;
+    height: 84px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menu-nextpage-title img
+{
+    height: 24px;
+    width: 24px;
+    margin: 15px;
+}
+.menu-nextpage-title span
+{
+    position: absolute;
+    margin-top: 17px;
+    margin-left: -5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu-nextpage-header ul
+{
+    display: flex;
+    margin: 0;
+    margin-left:-20px;
+    list-style: none;
+}
+.menu-nextpage-header li
+{
+    margin-top: 10px;
+    padding-left: 0;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.menu-nextpage-content
+{
+    position: relative;
+    margin-top: 2px;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.nextpage-animation
+{
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(10,auto);
+}
+.nextpage-column {
+    transition: transform 0.5s ease-in-out;
+}
+.menu-nextpage-content .nextpage-column
+{ 
+    position: relative;
+    width: 236px;
+    height: 336px;
+    top:10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+.nextpage-column:hover
+{
+    box-shadow: 0 0 0 3px rgba(98, 96, 96, 0.1);
+}
 
+/* =====================================================menu-nextpage============================================== */
+/* ==========================================ads-menu========================================== */
+.ads-menu {
+    display: grid;
+    gap: 17.5px;
+    margin-top: 20px;
+    grid-template-columns: repeat(4, auto);
+    width: 100%;
+    justify-content: center;
+    height: 318px;
+    cursor: pointer;
+}
+
+.ads-menu-content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    background-color: #ffffff;
+    width: 302px;
+    height: 307px;
+    border-radius: 10px;
+}
+
+.ads-menu-content > .ads-menu-title {
+    position: relative;
+    display: flex;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 46px;
+}
+
+.ads-menu-content > .ads-menu-background {
+    background-color: #457935;
+    grid-column: 1 / -1;
+    width: 290px;
+    height: 166px;
+}
+
+.ads-menu-content > img {
+    justify-self: center; /* Canh giữa từng ảnh con bên trong grid */
+    width: 85px;
+    height: 85px;
+}
+.button-arrow-menu-ads
+{
+    position: absolute;
+    transform: rotate(-90deg);
+    height: 25px; width: 25px;
+    right: 10px;
+    bottom: 12px;
+}
+
+/* ===================================== */
+.hoverRed
+{
+    font-weight: 600;
+    width: auto;
+    color:#C92127;
+    border-bottom: #C92127 solid 2px;
+    height: 34px;
+    
+}
