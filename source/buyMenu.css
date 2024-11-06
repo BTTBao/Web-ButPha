@@ -203,6 +203,7 @@
     border-radius: 10px;
     background-color: #ffffff;
     display: none;
+    z-index: 1000;
 }
 .submit-login
 {
@@ -240,7 +241,8 @@
     right: 0;
     border-radius: 10px;
     background-color: #ffffff;
-    display: none;  
+    display: none;
+    z-index: 1000;  
 }
 .header-menu .bar ul li:nth-child(2):hover .submenu-main .menuTotal {
     display: block;
