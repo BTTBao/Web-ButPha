@@ -1,0 +1,177 @@
+.product-menu
+{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.product-menu-column1
+{
+    width: 484px;
+    height: 1520px;
+    border-radius: 10px;
+}
+.product-menu-column2
+{
+    width: 750px;
+    height: 1520px;
+    right: 0;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+
+.product-essential
+{
+    position: sticky;
+    width: auto;
+    height: 580.25px;
+    top:16px;
+    background: white;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 16px;
+    border-radius: 8px;
+}
+.product-essential-img
+{
+    display: grid;
+    width: 452px;
+    height: 377.4px;
+    grid-template-columns: repeat(5,auto);
+}
+.product-essential-img img
+{
+    width: 82.4px;
+    height: 82.4px;
+}
+.product-essential-img > .main-img
+{
+    width: 277.4px;
+    height: 277.4px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    justify-self: center;
+}
+.product-policy
+{
+    position: absolute;
+    height: auto;
+    margin-top:70px;
+    gap:20px;
+    display: grid;
+    grid-template-columns: 20px 380px auto;
+    cursor: pointer;
+}
+/* ============================///============================= */
+.product-menu-column2-content
+{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.product-menu-column2-content > .title
+{
+    position: relative;
+    font-weight: bold;
+    font-size: 23.8px;
+}
+.product-menu-column2-content > .container-info
+{
+    position: relative;
+    margin-top: 15px;
+    display: grid;
+    font-size: 14px;
+    grid-template-columns: 430px auto;
+    gap:10px
+}
+.rating-box {
+    background: url(/skin/frontend/ma_vanese/fahasa/images/ico_star_gray.svg) repeat-x;
+    background-size: 12px 12px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    float: left;
+}
+.rating-box .rating {
+    float: left;
+    height: 16px;
+    background: url(/skin/frontend/ma_vanese/fahasa/images/ico_star_yellow.svg) repeat-x;
+    background-size: 16px 16px;
+}
+.discount-item
+{
+    position: absolute; top:158px; left:25px; color:white;background-color: #F8AD00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+.amount-product
+{
+    display: flex;
+    padding-left:10px;
+    padding-right:10px;
+    justify-content: center;
+    align-items: center;
+    border: rgb(235, 234, 234) solid 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.product-info-detail > span:nth-child(2n + 1) { /* Cột 1 */
+    color: gray; /* Màu đỏ */
+    
+}
+
+.product-info-detail> span:nth-child(2n + 2) { /* Cột 2 */
+    color: black; /* Màu xanh lá */
+}
+.separator {
+    grid-column: 1 / -1; /* Kéo dài thanh qua cả 2 cột */
+    height: 1px;
+    background-color: #ccc;
+    
+}
+.product-rate-container
+{
+    display: grid;
+    width: 1198px;
+    height: 124px;
+    grid-template-columns: 200px 300px auto;
+}
+.product-rate-item1
+{
+    grid-row-start: 1;
+    grid-row-end: 6;
+    display: block;
+    margin: auto;
+}
+.product-rate-item2
+{
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-rating {
+    margin: 0 10px;
+    margin-top: 5px;
+    width: 215px;
+    height: 5px;
+    background-color: silver;
+}

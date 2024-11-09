@@ -465,7 +465,7 @@
     font-weight: bold;
     font-size: 13px;
     color: #ffffff;
-    bottom: 46px;
+    bottom: 45px;
     left: 90px;
 
     display: flex;
@@ -481,7 +481,11 @@
     color:#888888;
     bottom: 25px;
     text-decoration: line-through;
-    left:10px
+    left:10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
 /* ================================================================================================= */
 /* DANH MUC SAN PHAM */

@@ -217,6 +217,10 @@
     height: 35px;
     cursor: pointer;
     border-radius: 10px;
+
+    display: flex;               /* Chuyển phần tử thành flex container */
+    align-items: center;         /* Canh giữa theo chiều dọc */
+    justify-content: center;
 }
 .submit-register {
     position: absolute;
