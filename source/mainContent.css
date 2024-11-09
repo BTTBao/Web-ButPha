@@ -67,11 +67,14 @@
 }
 .item-1
 {
+<<<<<<< HEAD
+=======
     position: relative;
     width: 860px;
     height: 326.19px;
     border-radius: 10px;
     cursor: pointer;
+>>>>>>> 6eac1da35d60f3bc0d16100dbc2727de34690c41
     grid-row-start: 1;
     grid-row-end: 3;
 }
