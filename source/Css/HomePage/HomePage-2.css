@@ -146,9 +146,10 @@
 .menu-flashsale {
     margin-top: 20px;
     padding-top: 20px;
-    background-image: url('image/flash_sale_background_image.webp'); /* Thay 'your-image-url.jpg' bằng URL của hình ảnh */
+    background-image: url('https://cdn0.fahasa.com/media/fahasa_web_image/flash_sale_background_image.jpg'); /* Thay 'your-image-url.jpg' bằng URL của hình ảnh */
     width: 100%;
     height: 450.29px; /* Chiều cao của menu */
+    z-index: 1;
 }
 .flashsale-content > .flashsale-content-title
 {
