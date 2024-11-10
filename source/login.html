@@ -60,11 +60,7 @@
             <div class="bar">
                 <ul>
                     <li>
-<<<<<<< HEAD
                         <a href="">
-=======
-                        <a href="buyMenu.html">
->>>>>>> 6eac1da35d60f3bc0d16100dbc2727de34690c41
                             <div class="logo">
                                 <img src="image/fahasa-logo.webp" alt=""> 
                             </div>
@@ -619,7 +615,7 @@
                     <a href="#">Quên mật khẩu?</a>
                 </div>
                 <div class="login-center">
-                    <button type="button" class="btn-login" disabled>Đăng nhập</button>
+                    <button type="button" class="btn-login" disabled onclick="onClickLogin()">Đăng nhập</button>
                 </div>
             </div>
             <div class="forgot-password-form" id="forgot-password-form" style="display: none;">
@@ -669,13 +665,13 @@
                 <div class="form-group password-group">
                     <label for="register-password">Mật khẩu</label>
                     <input type="password" id="register-password" placeholder="Nhập mật khẩu" style="background-color: rgb(242,242,242);" disabled>
-                    <br>
+                    
                     <span class="show-password">Hiện</span>
                 </div>
 
                 
                 <div class="login-center">
-                    <button type="button" class="btn-login">Đăng ký</button>
+                    <button type="button" class="btn-login" onclick="onClickRegister()">Đăng ký</button>
                 </div>
                 
                 <div class="text-content1">
@@ -742,7 +738,6 @@
                 this.value = otpInput.slice(0, 6);
             }
         
-            // Kiểm tra nếu mã OTP có đủ 6 ký tự
             if (this.value.length === 6) {
                 passwordInput.disabled = false;
                 passwordInput.style.backgroundColor = 'white';
@@ -755,8 +750,8 @@
             }
         });
         
-        // Ẩn/hiện mật khẩu khi click vào nút "Hiện"
-        document.querySelectorAll('.show-password').forEach(button => {
+        document.querySelectorAll('.show-password').forEach(button => 
+        {
             button.addEventListener('click', function() {
                 const passwordInput = this.previousElementSibling;
                 const isPasswordVisible = passwordInput.getAttribute('type') === 'text';
@@ -765,7 +760,14 @@
                 this.textContent = isPasswordVisible ? 'Hiện' : 'Ẩn';
             });
         });
-        
+        function onClickRegister()
+        {
+            alert("Đăng ký thành công");
+        }
+        function onClickLogin()
+        {
+            alert("Đăng nhập thành công");
+        }
         // Kiểm tra số điện thoại hợp lệ
         function isValidPhoneNumber(phoneNumber) {
             const phoneRegex = /^0\d{9}$/;
@@ -941,4 +943,5 @@
         });
     </script>
 </body>
+<script src="script.js"></script>
 </html>
