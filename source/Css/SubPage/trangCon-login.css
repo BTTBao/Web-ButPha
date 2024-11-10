@@ -384,7 +384,7 @@
 .show-password {
     position: absolute;
     top: 70%;
-    right: 0px; /* Giữ một khoảng nhỏ từ cạnh phải */
+    right: 5px; /* Giữ một khoảng nhỏ từ cạnh phải */
     transform: translateY(-50%);
     color: #007bff;
     cursor: pointer; /* Thêm hiệu ứng con trỏ để người dùng biết có thể click */
@@ -421,12 +421,12 @@
     text-decoration: none;
 }
 .forgot-password-form {
-    width: 400px; /* Giữ chiều rộng như register-form */
-    padding: 40px; /* Padding tương tự để tạo không gian bên trong */
-    background-color: white; /* Màu nền trắng */
+    width: 400px;
+    background-color: white;
     display: flex;
-    flex-direction: column; /* Xếp phần tử theo chiều dọc */
-    align-items: center; /* Căn giữa phần tử */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Đặt kiểu cho tiêu đề "Khôi phục mật khẩu" */
@@ -546,7 +546,9 @@
     color: #333; /* Màu chữ của label */
     font-size: 14px; /* Kích thước chữ cho label */
 }
-
+input{
+    box-sizing: border-box;
+}
 .register-form input {
     width: 100%; /* Chiều rộng đầy đủ cho input */
     padding: 10px; /* Padding bên trong input */
@@ -558,7 +560,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    width: 105%;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 
