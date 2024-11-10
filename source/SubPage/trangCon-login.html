@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="buyMenu.css">
-    <link rel="stylesheet" href="mainContent.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Css/HomePage/HomePage.css">
+    <link rel="stylesheet" href="../Css/HomePage/HomePage-2.css">
+    <link rel="stylesheet" href="../Css/SubPage/trangCon-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         body {
             font-family: nunito-sans, sans-serif, Helvetica, Arial;
@@ -53,14 +54,14 @@
 
         <div class="header-menu">
             <div class="sale">
-                <a href=""><img src="image/sale.webp" alt=""> </a>
+                <a href=""><img src="../image/HomePage/sale.webp" alt=""> </a>
             </div>
             <div class="bar">
                 <ul>
                     <li>
-                        <a href="buyMenu.html">
+                        <a href="">
                             <div class="logo">
-                                <img src="image/fahasa-logo.webp" alt=""> 
+                                <img src="../image/HomePage/fahasa-logo.webp" alt=""> 
                             </div>
                         </a>
                     </li>
@@ -68,10 +69,10 @@
                         <a href="">
                             <div class="menu">
                                 <div class="menuMain">
-                                    <img src="image/ico_menu.png" alt="">
+                                    <img src="../image/HomePage/ico_menu.png" alt="">
                                 </div>
                                 <div class="seeMore">
-                                    <img src="image/icon_seemore_gray.png" alt="">
+                                    <img src="../image/HomePage/icon_seemore_gray.png" alt="">
                                 </div>
                             </div>
                         </a>
@@ -541,34 +542,34 @@
                             <input type="text" placeholder="Bản chất của người - Han Kang giải Nobel 2024">
                             <a href="">
                                 <div class="searchArea">
-                                    <img src="image/ico_search_white.png" alt="">
+                                    <img src="../image/HomePage/ico_search_white.png" alt="">
                                 </div>
                             </a>
                         </div>
                     </li>
                     <li>
                         <a href="">
-                            <img src="image/noti_icon.png" alt="">
+                            <img src="../image/HomePage/noti_icon.png" alt="">
                             <p>Thông báo</p>
                         </a>
                         <div class="menuNoti">
-                            <img src="image/ico_noti_black.svg" alt="" style="position:absolute;left: 0; margin:20px">
+                            <img src="../image/HomePage/ico_noti_black.svg" alt="" style="position:absolute;left: 0; margin:20px">
                             <span style="position:absolute; color: black; font-weight: bolder; left:50px; top : 23px; font-size:17px;">Thông báo</span>
-                            <img src="image/ico_login.svg" alt="" style="width: 1000px; height: 90px;position: absolute; left:-365px; top: 90px;">
+                            <img src="../image/HomePage/ico_login.svg" alt="" style="width: 1000px; height: 90px;position: absolute; left:-365px; top: 90px;">
                             <span style="font-size: 16px;width: 180px;position: absolute; top:200px; left:45px">Vui lòng đăng nhập để xem thông báo</span>
                             <input type="submit" value="Đăng Nhập" class="submit-login" style="bottom: 50px; left: 33px; ">
                             <input type="submit" value="Đăng Ký" class="submit-register" style="bottom: 10px; left: 33px; ">
                         </div>
                     </li>
                     <li>
-                        <a href="giohang.html">
-                            <img src="image/cart_icon.png" alt="">
+                        <a href="">
+                            <img src="../image/HomePage/cart_icon.png" alt="">
                             <p>Giỏ hàng</p>
                         </a>
                     </li>
                     <li>
-                        <a href="login.html">
-                            <img src="image/account_icon.png" alt="">
+                        <a href="">
+                            <img src="../image/HomePage/account_icon.png" alt="">
                             <p>Tài khoản</p>
                         </a>
                         <div class="menuLogin">
@@ -579,9 +580,9 @@
                     <li>
                         <a href="">
                             <div class="flag">
-                                <div class="flagItem"><img src="image/vietnam.svg" alt=""></div>
+                                <div class="flagItem"><img src="../image/HomePage/vietnam.svg" alt=""></div>
                                 <div class="seeMore">
-                                    <img src="image/icon_seemore_gray.png" alt="">
+                                    <img src="../image/HomePage/icon_seemore_gray.png" alt="">
                                 </div>
                             </div>
                         </a>
@@ -589,13 +590,225 @@
                 </ul>
             </div>
         </div>
-        <div class="main-content">
-
-        </div>
+        <script src="submenu.js"></script>
+        
     </div>
-</body>
+    <div class="container1">
+        <div class="login-container">
+            <div class="tabs" id="tabs">
+                <a href="#" class="active" id="login-tab">Đăng nhập</a>
+                <a href="#"  id="register-tab">Đăng ký</a>
+            </div>
+        
+            <div class="login-form" id="login-form">
+                <div class="form-group">
+                    <label for="phone-email">Số điện thoại/Email</label>
+                    <input type="text" id="phone-email" placeholder="Nhập số điện thoại hoặc email">
+                </div>
+                <div class="form-group password-group">
+                    <label for="password">Mật khẩu</label>
+                    <input type="password" id="password" placeholder="Nhập mật khẩu">
+                    <span class="show-password">Hiện</span>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Quên mật khẩu?</a>
+                </div>
+                <div class="login-center">
+                    <button type="button" class="btn-login" disabled onclick="onClickLogin()">Đăng nhập</button>
+                </div>
+            </div>
+            <div class="forgot-password-form" id="forgot-password-form" style="display: none;">
+                <h2 style="text-align: center;">Khôi phục mật khẩu</h2>
+                <div class="form-group">
+                    <label for="forgot-phone-email">Số điện thoại/Email</label>
+                    <div class="input-group">
+                        <input type="text" id="forgot-phone-email" placeholder="Nhập số điện thoại hoặc email">
+                        <button id="send-forgot-otp-btn" type="button" class="send-otp-btn">Gửi mã OTP</button>
+                    </div>
+                    <div id="forgot-otp-message" style="color: green; display: none;"></div> <!-- Thông báo OTP đã gửi -->
+                    <div id="forgot-otp-error" style="color: red;"></div> <!-- Thông báo lỗi OTP -->
+                </div>
+                <div class="form-group">
+                    <label for="forgot-otp">Mã xác nhận OTP</label>
+                    <input type="text" id="forgot-otp" placeholder="6 ký tự" disabled>
+                </div>
+                <div class="form-group password-group">
+                    <label for="new-password">Mật khẩu mới</label>
+                    <input type="password" id="new-password" placeholder="Nhập mật khẩu mới" disabled>
+                    <span class="show-password">Hiện</span>
+                </div>
+                <div class="login-center">
+                    <button type="button" class="btn-login" disabled>Xác nhận</button>
+                </div>
+                <div class="back-to-login">
+                    <a href="#" id="back-to-login">Trở về</a>
+                </div>
+            </div>
+        
+            <div class="register-form" id="register-form" style="display: none;">
+                <div class="form-group">
+                    <label for="register-phone-email">Số điện thoại</label>
+                    <div class="input-group">
+                        <input type="text" id="register-phone-email" placeholder="Nhập số điện thoại">
+                        <button id="send-otp-btn" type="button" class="send-otp-btn">Gửi mã OTP</button>
+                    </div>
+                    
+                    <div id="otp-message" style="color: green; display: none;"></div> <!-- Thông báo OTP đã gửi -->
+                    <div id="otp-error" style="color: red;"></div>
+                    <label for="OTP">Mã xác nhận OTP</label>
+                    <input type="text" id="OTP" placeholder="6 ký tự" style="background-color: rgb(242,242,242);" disabled>
+                    <div id="otp-message1" style="color: green;"></div>
+                    <!-- Thông báo lỗi mã OTP -->
+                </div>
+                
+                <div class="form-group password-group">
+                    <label for="register-password">Mật khẩu</label>
+                    <input type="password" id="register-password" placeholder="Nhập mật khẩu" style="background-color: rgb(242,242,242);" disabled>
+                    
+                    <span class="show-password">Hiện</span>
+                </div>
 
-<footer >
+                
+                <div class="login-center">
+                    <button type="button" class="btn-login" onclick="onClickRegister()">Đăng ký</button>
+                </div>
+                
+                <div class="text-content1">
+                    Bằng việc đăng ký, bạn đã đồng ý với Fahasa.com về 
+                    <a href="#" style="color: blue;">Điều khoản dịch vụ</a> & 
+                    <a href="#" style="color: blue;">Chính sách bảo mật</a>
+                </div>
+            </div>
+            </div>
+    </div> 
+    <script>
+        document.querySelector('.forgot-password a').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('tabs').style.display = 'none';
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('forgot-password-form').style.display = 'block';
+        });
+        
+        document.getElementById('back-to-login').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('tabs').style.display = 'flex';
+            document.getElementById('forgot-password-form').style.display = 'none';
+            document.getElementById('login-form').style.display = 'block';
+        });
+        
+        // Gửi mã OTP cho biểu mẫu quên mật khẩu và kích hoạt ô nhập mã OTP, mật khẩu mới
+        document.getElementById('send-forgot-otp-btn').addEventListener('click', function() {
+            alert("Mã OTP đã được gửi!");
+            document.getElementById('forgot-otp').disabled = false; 
+            document.getElementById('new-password').disabled = false; 
+        });
+        
+        // Gửi OTP cho biểu mẫu đăng ký và kích hoạt ô nhập OTP
+        document.getElementById('send-otp-btn').addEventListener('click', function() {
+            const phoneInput = document.getElementById('register-phone-email').value;
+            const otpMessage = document.getElementById('otp-message');
+            const otpInput = document.getElementById('OTP');
+            const otpError = document.getElementById('otp-error');
+        
+            // Reset thông báo OTP và lỗi
+            otpMessage.style.display = 'none'; 
+            otpError.textContent = ''; 
+        
+            // Kiểm tra số điện thoại hợp lệ
+            if (/^0[0-9]{9}$/.test(phoneInput)) {
+                otpMessage.style.display = 'block';
+                otpMessage.textContent = 'OTP đã được gửi!';
+                otpInput.disabled = false;
+                otpInput.style.backgroundColor = 'white';
+                otpInput.focus();
+            } else {
+                otpError.textContent = 'Số điện thoại không hợp lệ! Vui lòng nhập lại.';
+            }
+        });
+        
+        // Kiểm tra mã OTP và kích hoạt ô nhập mật khẩu
+        document.getElementById('OTP').addEventListener('input', function() {
+            const otpInput = this.value;
+            const passwordInput = document.getElementById('register-password');
+            const otpMessage = document.getElementById('otp-message1');
+        
+            // Giới hạn số ký tự nhập vào ô OTP tối đa là 6
+            if (otpInput.length > 6) {
+                this.value = otpInput.slice(0, 6);
+            }
+        
+            if (this.value.length === 6) {
+                passwordInput.disabled = false;
+                passwordInput.style.backgroundColor = 'white';
+                otpMessage.textContent = 'Mã OTP hợp lệ!';
+                otpMessage.style.color = 'green';
+            } else {
+                passwordInput.disabled = true;
+                passwordInput.style.backgroundColor = 'rgb(242,242,242)';
+                otpMessage.textContent = '';
+            }
+        });
+        
+        document.querySelectorAll('.show-password').forEach(button => 
+        {
+            button.addEventListener('click', function() {
+                const passwordInput = this.previousElementSibling;
+                const isPasswordVisible = passwordInput.getAttribute('type') === 'text';
+        
+                passwordInput.setAttribute('type', isPasswordVisible ? 'password' : 'text');
+                this.textContent = isPasswordVisible ? 'Hiện' : 'Ẩn';
+            });
+        });
+        function onClickRegister()
+        {
+            alert("Đăng ký thành công");
+        }
+        function onClickLogin()
+        {
+            alert("Đăng nhập thành công");
+        }
+        // Kiểm tra số điện thoại hợp lệ
+        function isValidPhoneNumber(phoneNumber) {
+            const phoneRegex = /^0\d{9}$/;
+            return phoneRegex.test(phoneNumber);
+        }
+        
+        // Kiểm tra các trường trong form đăng nhập
+        document.getElementById('login-form').addEventListener('input', function() {
+            const phoneEmailInput = document.getElementById('phone-email').value;
+            const passwordInput = document.getElementById('password').value;
+            const loginButton = document.querySelector('#login-form .btn-login');
+        
+            if (isValidPhoneNumber(phoneEmailInput) && passwordInput.trim() !== '') {
+                loginButton.disabled = false;
+                loginButton.style.backgroundColor = 'red';
+                loginButton.style.cursor = 'pointer';
+            } else {
+                loginButton.disabled = true;
+                loginButton.style.backgroundColor = '';
+                loginButton.style.cursor = 'not-allowed';
+            }
+        });
+        
+        // Kiểm tra các trường trong form đăng ký
+        document.getElementById('register-form').addEventListener('input', function() {
+            const phoneInput = document.getElementById('register-phone-email').value;
+            const otpInput = document.getElementById('OTP').value;
+            const passwordInput = document.getElementById('register-password').value;
+            const registerButton = document.querySelector('#register-form .btn-login');
+        
+            if (isValidPhoneNumber(phoneInput) && otpInput.trim().length === 6 && passwordInput.trim() !== '') {
+                registerButton.disabled = false;
+                registerButton.style.backgroundColor = 'red';
+                registerButton.style.cursor = 'pointer';
+            } else {
+                registerButton.disabled = true;
+                registerButton.style.backgroundColor = '';
+                registerButton.style.cursor = 'not-allowed';
+            }
+        });
+        
+    </script> 
     <div class="container2">
         <div>
             <div class="bar">
@@ -611,100 +824,123 @@
             </div>
         </div>
     </div>
-        <div class="container3">
-            <div class="multibox4">
-            <div class="box1">
-                <img src="image/fahasa-logo.webp" alt="">
-                <div class="text-content">
-                    <div>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM</div>
-                    <div>Công Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA</div>
-                    <div>60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam</div><br>
-                    <div>Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc.</div>
+    <div class="container3">
+        <div class="multibox4">
+        <div class="box1">
+            <img src="../image/HomePage/fahasa-logo.webp" alt="">
+            <div class="text-content">
+                <div>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM</div>
+                <div>Công Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA</div>
+                <div>60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam</div><br>
+                <div>Fahasa.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc.</div>
+            </div>
+            <div class="img1">
+                <br>
+                <img src="../image/HomePage/logo-bo-cong-thuong-da-thong-bao1.webp" alt="" >
+            </div>
+            <div class="boximg1">
+                <nav>
+                    <b><a href=""><img alt="Facebook" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/footer/Facebook-on.png"></a></b>
+                    <b><a href=""><img alt="Instagram" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/Insta-on.png"></a></b>
+                    <b><a href=""><img alt="Youtube" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/Youtube-on.png"></a></b>
+                    <b><a href=""><img alt="Tumblr" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/tumblr-on.png"></a></b>
+                    <b><a href=""><img alt="Twitter" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/twitter-on.png"></a></b>
+                    <b><a href=""><img alt="Pinterest" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/pinterest-on.png"></a></b>
+                </nav>
+            </div>
+            <div class="boximg2">
+                <b><a href=""><img alt="FAHASA.COM" src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/android1.png" style="max-width: 110px;"></a></b>
+                <b><a href=""><img alt="FAHASA.COM" src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/appstore1.png" style="max-width: 110px;"></a></b>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="multibox1">
+                <div class="minibox1">
+                    <h2>DỊCH VỤ</h2>
+                    <div><a href="">Điều khoản sử dụng</a></div><br>
+                    <div><a href="">Chính sách bảo mật thông tin cá nhân</a></div><br>
+                    <div><a href="">Chính sách bảo mật thanh toán</a></div><br>
+                    <div><a href="">Giới thiệu Fahasa</a></div><br>
+                    <div><a href="">Hệ thống trung tâm - nhà sách</a></div>
                 </div>
-                <div class="img1">
-                    <br>
-                    <img src="image/logo-bo-cong-thuong-da-thong-bao1.webp" alt="" >
+                <div class="minibox2">
+                    <h2>HỖ TRỢ</h2>
+                    <div><a href="">Chính sách đổi - trả - hoàn tiền</a></div><br>
+                    <div><a href="">Chính sách bảo hành - bồi hoàn</a></div><br>
+                    <div><a href="">Chính sách vận chuyển</a></div><br>
+                    <div><a href="">Chính sách khách sỉ</a></div>
                 </div>
-                <div class="boximg1">
-                    <nav>
-                        <b><a href=""><img alt="Facebook" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/footer/Facebook-on.png"></a></b>
-                        <b><a href=""><img alt="Instagram" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/Insta-on.png"></a></b>
-                        <b><a href=""><img alt="Youtube" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/Youtube-on.png"></a></b>
-                        <b><a href=""><img alt="Tumblr" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/tumblr-on.png"></a></b>
-                        <b><a href=""><img alt="Twitter" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/twitter-on.png"></a></b>
-                        <b><a href=""><img alt="Pinterest" src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images//footer/pinterest-on.png"></a></b>
-                    </nav>
-                </div>
-                <div class="boximg2">
-                    <b><a href=""><img alt="FAHASA.COM" src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/android1.png" style="max-width: 110px;"></a></b>
-                    <b><a href=""><img alt="FAHASA.COM" src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/appstore1.png" style="max-width: 110px;"></a></b>
+                <div class="minibox3">
+                    <h2>TÀI KHOẢN CỦA TÔI</h2>
+                    <div><a href="">Đăng nhập/Tạo mới tài khoản</a></div><br>
+                    <div><a href="">Thay đổi địa chỉ khách hàng</a></div><br>
+                    <div><a href="">Chi tiết tài khoản</a></div><br>
+                    <div><a href="">Lịch sử mua hàng</a></div>
                 </div>
             </div>
-            <div class="box2">
-                <div class="multibox1">
-                    <div class="minibox1">
-                        <h2>DỊCH VỤ</h2>
-                        <div><a href="">Điều khoản sử dụng</a></div><br>
-                        <div><a href="">Chính sách bảo mật thông tin cá nhân</a></div><br>
-                        <div><a href="">Chính sách bảo mật thanh toán</a></div><br>
-                        <div><a href="">Giới thiệu Fahasa</a></div><br>
-                        <div><a href="">Hệ thống trung tâm - nhà sách</a></div>
-                    </div>
-                    <div class="minibox2">
-                        <h2>HỖ TRỢ</h2>
-                        <div><a href="">Chính sách đổi - trả - hoàn tiền</a></div><br>
-                        <div><a href="">Chính sách bảo hành - bồi hoàn</a></div><br>
-                        <div><a href="">Chính sách vận chuyển</a></div><br>
-                        <div><a href="">Chính sách khách sỉ</a></div>
-                    </div>
-                    <div class="minibox3">
-                        <h2>TÀI KHOẢN CỦA TÔI</h2>
-                        <div><a href="">Đăng nhập/Tạo mới tài khoản</a></div><br>
-                        <div><a href="">Thay đổi địa chỉ khách hàng</a></div><br>
-                        <div><a href="">Chi tiết tài khoản</a></div><br>
-                        <div><a href="">Lịch sử mua hàng</a></div>
-                    </div>
+            <h3 class="contact">LIÊN HỆ</h3>
+            <div class="multibox2">
+                <div class="box4">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>60-62 Lê Lợi, Q.1, TP. HCM</div>
                 </div>
-                <h3 class="contact">LIÊN HỆ</h3>
-                <div class="multibox2">
-                    <div class="box4">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>60-62 Lê Lợi, Q.1, TP. HCM</div>
-                    </div>
-                    <div class="box5">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>cskh@fahasa.com.vn</div>
-                    </div>
-                    <div class="box6">
-                        <i class="fa-solid fa-phone"></i>
-                        <div> 1900636467</div>
-                    </div>
+                <div class="box5">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>cskh@fahasa.com.vn</div>
                 </div>
-                <div class="multibox3">
-                    <div class="img1">
-                        <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/icon_snappy1.png" width="150px">
-                        <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/logo_lex.jpg" width="90px">
-                        <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/Logo_ninjavan.png" width="150px">
-                        <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/ahamove_logo3.png" width="160px">
-                        <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/vnpost1.png" width="100px">
-                    </div>
-                    <div class="multibox4">
-                        <div class="box7">
-                            <div class="img2">
-                            <img style="max-width: 120px;  " src="https://cdn0.fahasa.com/media//wysiwyg/Logo-NCC/vnpay_logo.png">
-                            <img style="height: 50px; " src="https://cdn0.fahasa.com/media//wysiwyg/Logo-NCC/momopay.png">
-                            <img style="height: 44px;  " src="https://cdn0.fahasa.com/media//wysiwyg/Logo-NCC/shopeepay_logo.png">
-                            </div>
+                <div class="box6">
+                    <i class="fa-solid fa-phone"></i>
+                    <div> 1900636467</div>
+                </div>
+            </div>
+            <div class="multibox3">
+                <div class="img1">
+                    <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/icon_snappy1.png" width="150px">
+                    <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/logo_lex.jpg" width="90px">
+                    <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/Logo_ninjavan.png" width="150px">
+                    <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/ahamove_logo3.png" width="160px">
+                    <img src="https://cdn0.fahasa.com/media/wysiwyg/Logo-NCC/vnpost1.png" width="100px">
+                </div>
+                <div class="multibox4">
+                    <div class="box7">
+                        <div class="img2">
+                        <img style="max-width: 120px;  " src="https://cdn0.fahasa.com/media//wysiwyg/Logo-NCC/vnpay_logo.png">
+                        <img style="height: 50px; " src="https://cdn0.fahasa.com/media//wysiwyg/Logo-NCC/momopay.png">
+                        <img style="height: 44px;  " src="https://cdn0.fahasa.com/media//wysiwyg/Logo-NCC/shopeepay_logo.png">
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="box8">
-                <div class="footer-text">
-                    Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.
-                </div>
+        </div>
+        </div>
+        <div class="box8">
+            <div class="footer-text">
+                Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.
             </div>
         </div>
-</footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginTab = document.getElementById('login-tab');
+            const registerTab = document.getElementById('register-tab');
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+    
+            loginTab.addEventListener('click', function () {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+                loginTab.classList.add('active');
+                registerTab.classList.remove('active');
+            });
+    
+            registerTab.addEventListener('click', function () {
+                registerForm.style.display = 'block';
+                loginForm.style.display = 'none';
+                registerTab.classList.add('active');
+                loginTab.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+<script src="../Javascript/HomePage/script.js"></script>
 </html>
