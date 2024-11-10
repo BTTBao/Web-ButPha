@@ -203,7 +203,7 @@ document.querySelectorAll('.header-menu-content a').forEach(item => {
 document.querySelector('.header-menu-content a[data-category="vanhoc"]').click();
 /////////banner/////
 let count = 0;
-const maxCount = 5;
+const maxCount = 6;
 const itemWidth = 860;
 let barHidden = document.querySelectorAll('.item-1 ul li');
 function onClickButtonRight()

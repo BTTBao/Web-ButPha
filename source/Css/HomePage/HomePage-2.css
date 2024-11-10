@@ -40,7 +40,7 @@
 
 .banner .bar-banner {
     display: grid;
-    grid-template-columns: repeat(6, auto);
+    grid-template-columns: repeat(7, auto);
     list-style: none;
     width: max-content;
     transition: transform 0.5s ease;
