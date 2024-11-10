@@ -1,0 +1,45 @@
+.main-content1 .menu-logo1
+{
+
+    max-width: 1500px;
+    margin: 0px auto;
+}
+.main-content1 .menu-logo1 .img
+{
+    max-width: 285px;
+
+}
+.main-content2 
+{
+
+    max-width: 1500px;
+    margin: 0px auto;
+}
+.menu-nextpage-content
+{
+    position: relative;
+    margin-top: 2px;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.nextpage-animation
+{
+    display: grid;
+    column-gap: 15px;
+    grid-template-columns: repeat(10,auto);
+}
+.nextpage-column {
+    transition: transform 0.5s ease-in-out;
+}
+.menu-nextpage-content .nextpage-column
+{ 
+    position: relative;
+    width: 236px;
+    height: 336px;
+    top:10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
