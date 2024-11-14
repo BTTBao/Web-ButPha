@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../Css/HomePage/HomePage.css">
     <link rel="stylesheet" href="../Css/HomePage/HomePage-2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../Css/SubPage/trangCon-listP.css">
+    <link rel="stylesheet" href="../Css/SubPage/trangCon-listMuaNhieu.css">
 
     <style>
         body {
@@ -22,7 +22,7 @@
             background-color: #F0F0F0; /* Màu nền cho toàn bộ trang */
         }
         .container {
-            max-width: 1350px; /* Chiều rộng tối đa */
+            max-width: 1760px; /* Chiều rộng tối đa */
             margin: auto; /* Căn giữa */
             padding: 0; /* Padding trong container */
         }
@@ -50,7 +50,7 @@
         }
         footer
         {
-            max-width: 1320px; /* Chiều rộng tối đa */
+            max-width: 1260px; /* Chiều rộng tối đa */
             margin: auto; /* Căn giữa */
             padding: 0;   
         }
@@ -598,294 +598,231 @@
                 </ul>
             </div>
         </div>
-        <div class="container00">
-            <!-- Sidebar -->
-            <aside class="sidebar">
-                <h2>Nhóm Sản Phẩm</h2>
-                <p>Tất Cả Nhóm sản Phẩm</p>
-                <p style="padding: 7px;">Sách Tiếng Việt</p>
-                <p style="padding-left: 18px;">Kinh Tế</p>
-                <ul>
-                    <li><a href="#">Quản Trị - Lãnh Đạo</a></li>
-                    <li><a href="#">Nhân Vật - Bài Học Kinh Doanh</a></li>
-                    <li><a href="#">Marketing - Bán Hàng</a></li>
-                    <li><a href="#">Khởi Nghiệp - Làm Giàu</a></li>
-                    <li><a href="#">Phân Tích Kinh Tế</a></li>
-                    <li><a href="#">Chứng Khoán - Bất Động Sản - Đầu Tư</a></li>
-                    <li><a href="#">Tài Chính - Ngân Hàng</a></li>
-                    <li><a href="#">Nhân Sự - Việc Làm</a></li>
-                    <li><a href="#">Kế Toán - Kiểm Toán - Thuế</a></li>
-                    <li><a href="#">Ngoại Thương</a></li>
-                </ul>
-                <h3>Giá</h3>
-                <ul>
-                    <li><input type="checkbox"> 0đ - 150,000đ</li>
-                    <li><input type="checkbox"> 150,000đ - 300,000đ</li>
-                    <li><input type="checkbox"> 300,000đ - 500,000đ</li>
-                    <li><input type="checkbox"> 500,000đ - 700,000đ</li>
-                    <li><input type="checkbox"> 700,000đ trở lên</li>
-                </ul>
-                <h3>Nhà Cung Cấp</h3>
-                <ul>
-                    <li><input type="checkbox"> Alpha Books</li>
-                    <li><input type="checkbox"> NXB Trẻ</li>
-                    <li><input type="checkbox"> 1980 Books</li>
-                    <li><input type="checkbox"> MCBooks</li>
-                    <li><input type="checkbox"> Tân Việt</li>
-                    <li><input type="checkbox"> First News</li>
-                    <li><input type="checkbox"> Nhã Nam</li>
-                    <li><input type="checkbox"> Thái Hà</li>
-                </ul>
-                <h3>Ngôn Ngữ</h3>
-                <ul>
-                    <li><input type="checkbox"> Tiếng Việt</li>
-                </ul>
-                <h3>Hình Thức</h3>
-                <ul>
-                    <li><input type="checkbox"> Bìa Mềm</li>
-                    <li><input type="checkbox"> Bìa Cứng</li>
-                </ul>
-            </aside>
-
-
-           <!-- Main Content -->
-        <div class="content">
-            <!-- Sort Section -->
-            <div class="sort-section">
-                <div>
-                    <label for="sort-by">Sắp xếp theo :</label>
+        <div class="frame">
+            <div class="container11">
+                <div class="section-header">
+                    <div class="section-title">
+                        <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/icon_dealhot_new.png" alt="icon">
+                        <h2>Mua Nhiều Nhất</h2>
+                    </div>
                 </div>
-                <img src="../image/HomePage/icon_seemore_gray.png" alt="" class="inbox" style="left:750px">
-                <select id="sort-by">
-                    <option value="">Bán Chạy Tuần</option>
-                    <option value="">Bán Chạy Tháng</option>
-                    <option value="">Bán Chạy Năm</option>
-                    <option value="">Nổi Bật Tuần</option>
-                    <option value="">Nổi Bật Tháng</option>
-                    <option value="">Nổi Bật Năm</option>
-                    <option value="">Chiết Khấu</option>
-                    <option value="">Giá Bán</option>
-                    <option value="">Mới Nhất</option>
-                </select>
-                <img src="../image/HomePage/icon_seemore_gray.png" alt="" class="inbox" style="left:955px">
-                <select id="product-count">
-                    <option value="24">12 sản phẩm</option>
-                    <option value="48">24 sản phẩm</option>
-                    <option value="72">48 sản phẩm</option>
-                </select>
-            </div>
-            <!-- Horizontal line -->
-            <div class="horizontal-line"></div>
-
-            <!-- Product Grid -->
-            <div class="product-grid">
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_32101.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986013469.jpg" alt="">
-                    <p>48 Nguyên Tắc Chủ Chốt Của Quyền Lực (Tái Bản 2020)</p>
-                    <div class="price">
-                        <span class="discount-price">168.000 đ</span>
-                        <p class="original-price">200.000 đ</p>
+                <div class="book-list">
+                    <div class="book-item">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_192681.jpg" alt="Cô bé bán diêm">
+                        <p>Truyện Cổ Tích Thế Giới Hay Nhất - Cô Bé Bán...</p>
+                        <div class="price">
+                            <span class="current-price">13.120 ₫</span>
+                            <span class="discount">-18%</span>
+                        </div>
+                        <div class="original-price">16.000 ₫</div>
                     </div>
-                    <div class="circular-text">
-                        16%
+                    <div class="book-item">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212362559.jpg" alt="Gieo mầm yêu thương">
+                        <p>Gieo Mầm Yêu Thương - Một Đêm Mưa Tuyết</p>
+                        <div class="price">
+                            <span class="current-price">63.120 ₫</span>
+                            <span class="discount">-18%</span>
+                        </div>
+                        <div class="original-price">78.000 ₫</div>
                     </div>
-                    <div class="rating">★★★★☆</div>
+                    <div class="book-item">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8934974184010.jpg" alt="Chú Heo Giáng Sinh">
+                        <p>Chú Heo Giáng Sinh</p>
+                        <div class="price">
+                            <span class="current-price">126.120 ₫</span>
+                            <span class="discount">-16%</span>
+                        </div>
+                        <div class="original-price">150.000 ₫</div>
+                    </div>
+                    <div class="book-item">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8935244882551.jpg" alt="Peppa Giáng Sinh Hoàn Hảo">
+                        <p>Thế Giới Của Peppa - Giáng Sinh Hoàn Hảo</p>
+                        <div class="price">
+                            <span class="current-price">26.120 ₫</span>
+                            <span class="discount">-13%</span>
+                        </div>
+                        <div class="original-price">30.000 ₫</div>
+                    </div>
+                    <div class="book-item">
+                        <img src="https://cdn0.fahasa.com/media/catalog/product/3/-/3-dd-.jpg" alt="English Zoo - Snowy Day">
+                        <p>English Zoo - Ngày Tuyết Rơi - Snowy Day</p>
+                        <div class="price">
+                            <span class="current-price">71.120 ₫</span>
+                            <span class="discount">-25%</span>
+                        </div>
+                        <div class="original-price">95.000 ₫</div>
+                    </div>
                 </div>
-                <!-- Repeat similar product items here -->
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935086852118.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/3/3/3300000049175.jpg" alt="">
-                    <p>Tư Duy Ngược Dịch Chuyển Thế Giới - Originals: How...</p>
-                    <div class="price">
-                        <span class="discount-price">142.400 đ</span>
-                        <p class="original-price">178.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        20%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_183396.jpg" alt="">
-                    <p>Nghệ Thuật Tư Duy Chiến Lược</p>
-                    <div class="price">
-                        <span class="discount-price">109.200 đ</span>
-                        <p class="original-price">130.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        16%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/n/x/nxbtre_full_09462021_024609.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/l/i/lich-ban_bia.jpg" alt="">
-                    <p>Từ Tốt Đến Vĩ Đại - Jim Collins (Tái Bản 2021)</p>
-                    <div class="price">
-                        <span class="discount-price">155.400 đ</span>
-                        <p class="original-price">239.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        34%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/n/g/nghigiaulamgiau_110k-01_bia-1.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936230050077.jpg" alt="">
-                    <p>Nghĩ Giàu & Làm Giàu (Tái Bản 2020)</p>
-                    <div class="price">
-                        <span class="discount-price">88.000 đ</span>
-                        <p class="original-price">110.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        20%
-                    </div>
-                    <div class="rating">★★★★☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/t/r/tr_-ch_i-c_a-nh_ng-k_-hi_u-lu_t---b_a-1.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8931805202059.jpg" alt="">
-                    <p>Trò Chơi Của Những Kẻ Hiểu Luật</p>
-                    <div class="price">
-                        <span class="discount-price">137.830 đ</span>
-                        <p class="original-price">179.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        23%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/9/7/9786043941807.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986013476.jpg" alt="">
-                    <p>Người Giàu Có Nhất Thành Babylon</p>
-                    <div class="price">
-                        <span class="discount-price">49.000 đ</span>
-                        <p class="original-price">98.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        50%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_230370.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986013483.jpg" alt="">
-                    <p>Những Kẻ Xuất Chúng (Tái Bản 2021)</p>
-                    <div class="price">
-                        <span class="discount-price">111.300 đ</span>
-                        <p class="original-price">159.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        30%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-tr_c-t_-duy-chi_n-l_c.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936078093526-mau1.jpg" alt="">
-                    <p>Tư Duy Chiến Lược - Lý Thuyết Trò Chơi Thực Hành</p>
-                    <div class="price">
-                        <span class="discount-price">67.200 đ</span>
-                        <p class="original-price">80.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        16%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935280400900.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936078093502-mau2.jpg" alt="">
-                    <p>Phương Pháp Kaizen - The Kaizen Way (Tái Bản 2023)</p>
-                    <div class="price">
-                        <span class="discount-price">214.400 đ</span>
-                        <p class="original-price">268.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        20%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934974179351.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936078093519-mau3.jpg" alt="">
-                    <p>Tôi Đã Làm Giàu Như Thế (Tái Bản 2022)</p>
-                    <div class="price">
-                        <span class="discount-price">73.200 đ</span>
-                        <p class="original-price">95.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        23%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/r/a/ra-quyet-dinh-dua-tren-phan-tich-du.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/1/3/1301040006298.jpg" alt="">
-                    <p>Ra Quyết Định Dựa Trên Phân Tích Dữ Liệu</p>
-                    <div class="price">
-                        <span class="discount-price">237.200 đ</span>
-                        <p class="original-price">299.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        23%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_244718_1_4996.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/3/3/3300000048536.jpg" alt="">
-                    <p>Tỷ Phú Bán Giày (Tái Bản)</p>
-                    <div class="price">
-                        <span class="discount-price">100.200 đ</span>
-                        <p class="original-price">120.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        16%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/b/u/business-planning-b_a-full.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/3/3/3300000049205.jpg" alt="">
-                    <p>Business Planning - Phương Pháp Lập Kế Hoạch Kinh...</p>
-                    <div class="price">
-                        <span class="discount-price">120.200 đ</span>
-                        <p class="original-price">186.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        35%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_30538_1.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8931805888888.jpg" alt="">
-                    <p>Bí Mật Của Phan Thiên Ân (Tái Bản 2023)</p>
-                    <div class="price">
-                        <span class="discount-price">154.200 đ</span>
-                        <p class="original-price">200.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        23%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-                <div class="product-item">
-                    <img class=" lazyloaded" src="https://cdn0.fahasa.com/media/catalog/product/d/u/duongdenthanhcongdinhcao.jpg" data-src="https://cdn0.fahasa.com/media/catalog/product/8/9/8936078093502-mau3.jpg" alt="">
-                    <p>Đường Đến Thành Công Đỉnh Cao - Những Lời...</p>
-                    <div class="price">
-                        <span class="discount-price">113.200 đ</span>
-                        <p class="original-price">135.000 đ</p>
-                    </div>
-                    <div class="circular-text">
-                        16%
-                    </div>
-                    <div class="rating">☆☆☆☆☆</div>
-                </div>
-            </div>
-            <div class="select-page">
-                <i class="fa-solid fa-angle-left" id="prev-page" style="display: none;"></i>
-                <li class="page-number active">1</li>
-                <li class="page-number">2</li>
-                <li class="page-number">3</li>
-                <li class="page-number">4</li>
-                <li class="page-number">5</li>
-                <li>...</li>
-                <li class="page-number">6</li>
-                <i class="fa-solid fa-angle-right" id="next-page"></i>
             </div>
         </div>
-    </div>
+        <div class="menu-nextpage" id = 'menu15'>
+            <div class="menu-nextpage-title">
+                <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/category/ico_sachtrongnuoc.svg" alt="">
+                <span style="font-size: 25px;">Tất cả sản phẩm</span>
+            </div>
+            <div class="menu-nextpage-header">
+                <ul>
+                    <li onclick="showNextMenu('menu15', 'item1')" id="item1">Tất Cả</li>
+                    <li onclick="showNextMenu('menu15', 'item2')" id="item2">Mới Nhất</li>
+                    <li onclick="showNextMenu('menu15', 'item3')" id="item2">Children's Books</li>
+                    <li onclick="showNextMenu('menu15', 'item4')" id="item2">Thiếu Nhi</li>
+                    <li onclick="showNextMenu('menu15', 'item5')" id="item2">Sách Tiếng Việt</li>
+                </ul>
+            </div>
+            <div class="menu-nextpage-content">
+                <div id = "item1" class="section-nextpage">
+                    <div class="nextpage-animation" style="grid-template-columns: repeat(5,auto);">
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_231332.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Ngày Xửa Ngày Xưa - Nàng Bạch Tuyết Và Bảy Chú Lùn</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/3/-/3-dd-.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">English Zoo - Ngày Tuyết Rơi - Snowy Day</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-5_18_14.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Văn Học Dân Gian Tuyển Chọn - Vườn Cổ Tích Tuổi Thơ - Nàng...</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8935212366014.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Ông Già Noel Và Biệt Đội Giải Cứu Cổ Tích</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8935244875041.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Khéo Tay Tô Màu - Giáng Sinh Của Peppa</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/z/4/z4152734779351_243efdc875281274abb1bcdc14375729.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Vui Suốt Cả Bốn Mùa - Mùa Đông Ấm Áp Sẻ Chia</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8935244870596.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Giáng Sinh Đầu Tiên Của Chuột Típ (Tái Bản 2022)</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935236428033.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Truyện Kể Trước Giờ Đi Ngủ - Mùa Đông (Tái Bản)</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_187390.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Ngôi Nhà Nhỏ Trên Thảo Nguyên - Tập 6 - Mùa Đông Bất Tận</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8935210309204.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Tỏa Sáng Trong Đêm - Chúc Ngủ Ngon Ông Già Noel - Bìa Cứng</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div id = "item2" class="section-nextpage">
+                    <div class="nextpage-animation" style="grid-template-columns: repeat(5,auto);">
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/i/m/image_192681.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Truyện Cổ Tích Thế Giơi Hay Nhất - Cô Bé Bán Diêm</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935212362559.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Gieo Mầm Yêu Thương - Một Đêm Mưa Tuyết</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8934974184010.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Chú Heo Giáng Sinh</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_truyen-co-giang-sinh.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Truyện Cổ Giáng Sinh</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8935244882551.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Thế Giới Của Peppa - Giáng Sinh Hoàn Hảo</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_miu-noel-1.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Truyện Ehon Song Ngữ Việt-Anh - Miu Bé Nhỏ Đón Giáng Sinh - Giấc Mơ Noel Kỳ Lạ</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_meo-mog-map_giang-sinh-cua-co-meo_tb-2023.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Mèo Mog Mập - Giáng Sinh Của Cô Mèo (Tái Bản 2023)</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/thumbnailframe/product_frame_noel/frame_8935244888164.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Mùa Giáng Sinh Rực Rỡ</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9781534478060.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">Christmas Parade</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                        <div class="nextpage-column">
+                            <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9782764336922.jpg" alt="" class="img-style-1">
+                            <span class="text-style-1">The Night Before Christmas Little Classics</span>
+                            <span class = "text-style-2">159.100 đ</span>
+                            <span class="text-style-3">-26%</span>
+                            <span class="text-style-4">215.000 đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-nextpage-footer">
+                <div class="submit-register" style="margin: auto; ">Xem thêm</div>
+            </div>
+        </div>
 </body>
 <footer >
     <div class="container2">
