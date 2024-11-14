@@ -63,32 +63,32 @@ let currentPosition = 0;
         }
 
         ///////////////////////menu///////////////////////////////
-        let amount = 0; 
-        let select = 'right';
-
+        let amount = 0;
+        const select = {};
+        
         function moveNextPage(menuId) {
             const menu = document.getElementById(menuId);
             if (!menu) return;
 
-            // Xác định npButton và mainItems trong menu cụ thể
+            if (!select[menuId]) {
+                select[menuId] = 'right';
+            }
             let npButton = menu.querySelector('.arrow');
             let mainItems = menu.querySelectorAll('.nextpage-column');
-
-            if (select === 'right') {
+        
+            if (select[menuId] === 'right') {
                 amount = 1260;
-                select = 'left';
+                select[menuId] = 'left';
                 npButton.classList.remove('arrow-right'); 
                 npButton.classList.add('arrow-left'); 
                 npButton.innerHTML = '&#10094;';
             } else {
                 amount = 0;
-                select = 'right';
+                select[menuId] = 'right';
                 npButton.classList.remove('arrow-left'); 
                 npButton.classList.add('arrow-right'); 
                 npButton.innerHTML = '&#10095;';
             }
-
-            // Di chuyển từng mainItem trong menu cụ thể
             mainItems.forEach(mainItem => {
                 mainItem.style.transform = `translateX(-${amount}px)`;
             });
