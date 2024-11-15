@@ -760,7 +760,7 @@
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    /* -webkit-line-clamp: 2; */
     text-overflow: ellipsis;   
 }
 .item0 img {
@@ -798,4 +798,42 @@
     border-radius: 5px;
     font-size: 16px;
     border: solid #c92127;
+}
+
+
+body {
+    font-family: nunito-sans, sans-serif, Helvetica, Arial;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 400;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F0F0; /* Màu nền cho toàn bộ trang */
+}
+.container {
+    max-width: 1260px; /* Chiều rộng tối đa */
+    margin: auto; /* Căn giữa */
+    padding: 0; /* Padding trong container */
+}
+.main-content
+{
+    max-width: 1260px;
+    margin: auto;
+    padding: 0;   
+}
+.flashsale-content
+{
+    max-width: 1260px;
+    margin: auto;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto auto auto;
+}
+footer
+{
+    max-width: 1260px; /* Chiều rộng tối đa */
+    margin: auto; /* Căn giữa */
+    padding: 0;   
 }
