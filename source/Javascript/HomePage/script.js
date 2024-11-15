@@ -252,3 +252,15 @@ setInterval(onClickButtonRight, 5000);
 
 //////////////
 //// phan trang
+
+//faha-icon
+    let helpMenu = document.querySelector('body .menu-help')
+    let buttonLeave = document.querySelector('body .menu-help span:ntd-child(4)')
+    function onClickFahaIcon()
+    {
+        helpMenu.style.display = 'block';
+    }
+    function closeMenuHelp()
+    {
+        helpMenu.style.display = 'none';
+    }
