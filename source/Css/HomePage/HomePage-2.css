@@ -888,6 +888,8 @@
 .icon-faha
 {
     position: fixed;
+    right: 0;
+    bottom: 0;
     margin:20px;
     background-color: white;
     width: 60px; height: 60px; 
@@ -898,6 +900,8 @@
 .menu-help
 {
     position: fixed;
+    right: 0;
+    bottom: 100px;
     transition: top 0.5s ease, opacity 0.5s ease;
     display: none;
     margin:20px;
@@ -994,5 +998,26 @@
     background-color: #B70A0B;
     border-radius: 10px;
     border:white 0px;
+    cursor: pointer;
+}
+.ads-left
+{
+    position: fixed;
+    top:135px;
+    height: 1000px;
+    width: 310px;
+    background-color: red;
+    background: url('https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/68/6d/686d6a321a0b4de83d3626490a59afaf.png');
+    cursor: pointer;
+}
+.ads-right
+{
+    position: fixed;
+    right: 0;
+    top:135px;
+    height: 1000px;
+    width: 310px;
+    background: url('https://cdnv2.tgdd.vn/mwg-static/tgdd/Banner/42/71/4271e23c2640cafa65ff0777d654bcff.png');
+    background-color: black;
     cursor: pointer;
 }
